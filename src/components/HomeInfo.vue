@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home-info">
     <h1>{{ msg }}</h1>
     <p>
       Welcome to the Danby Volunteer Fire Company's new website. We are planning
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "HomeInfo",
   props: {
     msg: String,
   },

@@ -5,17 +5,18 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About Us</router-link> |
     <router-link to="/safety">Safety Information</router-link> |
-    <router-link to="/volunteer">Volunteer</router-link> | 
-    <router-link to="/links">Links</router-link> | 
+    <router-link to="/volunteer">Volunteer</router-link> |
+    <router-link to="/links">Links</router-link> |
     <router-link to="/contact">Contact Us</router-link> |
     <router-link to="/training">Training</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
 #app {
-  font-family: 'Scheherazade New';font-size: 22px;
+  font-family: "Scheherazade New";
+  font-size: 22px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

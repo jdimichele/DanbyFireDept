@@ -11,7 +11,7 @@ December 8: Commissioner Elections 5pm - 9pm.
 December 10: Company Elections.
 Training Resources
 NIMS/ICS
-All active members are required to complete two courses on the National Incident Management System and Incident Command System through the FEMA Independent Study Program. The courses are:
+All active members are required to complete two courses on the National Incident Management System and Incident Command System through the FEMA Independent Study Program(http://training.fema.gov/IS/Nims.asp). The courses are:
 
 IS-100.b - (ICS 100) Introduction to Incident Command System
 IS-700.a National Incident Management System (NIMS), An Introduction
