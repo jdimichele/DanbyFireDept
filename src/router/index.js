@@ -1,47 +1,47 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
-import AboutView from '../views/AboutView.vue';
-import SafetyInfoView from '../views/SafetyInfoView.vue';
-import VolunteerView from '../views/VolunteerView.vue';
-import LinksView from '../views/LinksView.vue';
-import ContactView from '../views/ContactView.vue';
-import TrainingView from '../views/TrainingView.vue';
+import HomePage from '../pages/HomePage.vue';
+import AboutPage from '../pages/AboutPage.vue';
+import SafetyInfoPage from '../pages/SafetyInfoPage.vue';
+import VolunteerPage from '../pages/VolunteerPage.vue';
+import LinksPage from '../pages/LinksPage.vue';
+import ContactPage from '../pages/ContactPage.vue';
+import TrainingPage from '../pages/TrainingPage.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomePage
   },
   {
     path: '/about',
     name: 'about',
-    component: AboutView
+    component: AboutPage
   },
   {
     path: '/safety',
     name: 'safety',
-    component: SafetyInfoView
+    component: SafetyInfoPage
   },
   {
     path: '/volunteer',
     name: 'volunteer',
-    component: VolunteerView
+    component: VolunteerPage
   },
   {
     path: '/links',
     name: 'links',
-    component: LinksView
+    component: LinksPage
   },
   {
     path: '/contact',
     name: 'contact',
-    component: ContactView
+    component: ContactPage
   },
   {
     path: '/training',
     name: 'training',
-    component: TrainingView
+    component: TrainingPage
   },
 ]
 

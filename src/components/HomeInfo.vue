@@ -12,7 +12,7 @@
         We are an all-volunteer fire company and are perpetually shorthanded for
         a variety of tasks, including both emergency response and non-emergency
         duties. If you may have the time and interest to volunteer, please see
-        our new <router-link to="/volunteer"> Volunteer Information</router-link> page for more
+        our new <router-link to="/volunteer">Volunteer Information</router-link> page for more
         details.
       </li>
       <li>
