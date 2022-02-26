@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/"><img src="src\assets\danbybadge.jpg"></router-link>
-    <br>
+    <router-link to="/"><img src="src\assets\danbybadge.png" /></router-link>
+    <br />
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About Us</router-link> |
     <router-link to="/safety">Safety Information</router-link> |
@@ -11,6 +11,8 @@
     <router-link to="/training">Training</router-link>
   </nav>
   <router-view />
+  <br />
+  <footer>© DVFC 2022</footer>
 </template>
 
 <style>
