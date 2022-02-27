@@ -1,5 +1,6 @@
 <template>
   <div class="home-info">
+    <!-- News/Blog page that will need more integration in the future. -->
     <h1>{{ msg }}</h1>
     <p>
       Welcome to the Danby Volunteer Fire Company's new website. We are planning

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="linksdiv">
     <h2>Tompkins County Fire Departments</h2>
     <ul>
       <li v-for="tompkinsLink in tompkinsLinks" :key="tompkinsLink.id">
@@ -8,21 +8,16 @@
         </a>
       </li>
     </ul>
-  </div>
-  <div>
+
     <h2>Other Fire Agencies</h2>
     <ul>
-      <li
-        v-for="otherFireLink in otherFireLinks"
-        :key="otherFireLink.id"
-      >
+      <li v-for="otherFireLink in otherFireLinks" :key="otherFireLink.id">
         <a :href="otherFireLink.url" target="_blank">
           {{ otherFireLink.name }}
         </a>
       </li>
     </ul>
-  </div>
-    <div>
+
     <h2>Emergency Medical Services</h2>
     <ul>
       <li
@@ -34,40 +29,28 @@
         </a>
       </li>
     </ul>
-  </div>
-    <div>
+
     <h2>Law Enforcement Agencies</h2>
     <ul>
-      <li
-        v-for="lawEnfLink in lawEnfLinks"
-        :key="lawEnfLink.id"
-      >
+      <li v-for="lawEnfLink in lawEnfLinks" :key="lawEnfLink.id">
         <a :href="lawEnfLink.url" target="_blank">
           {{ lawEnfLink.name }}
         </a>
       </li>
     </ul>
-  </div>
-      <div>
+
     <h2>Local Government</h2>
     <ul>
-      <li
-        v-for="localGovLink in localGovLinks"
-        :key="localGovLink.id"
-      >
+      <li v-for="localGovLink in localGovLinks" :key="localGovLink.id">
         <a :href="localGovLink.url" target="_blank">
           {{ localGovLink.name }}
         </a>
       </li>
     </ul>
-  </div>
-      <div>
+
     <h2>Other Local Services</h2>
     <ul>
-      <li
-        v-for="localServsLink in localServsLinks"
-        :key="localServsLink.id"
-      >
+      <li v-for="localServsLink in localServsLinks" :key="localServsLink.id">
         <a :href="localServsLink.url" target="_blank">
           {{ localServsLink.name }}
         </a>
@@ -298,3 +281,15 @@ export default {
   },
 };
 </script>
+
+<style>
+  .linksdiv {
+    column-count: 2;
+    column-span: all;
+    text-align:initial;
+  }
+
+  h2 {
+    text-align: center;
+  }
+</style>
