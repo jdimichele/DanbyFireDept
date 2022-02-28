@@ -1,6 +1,6 @@
 <template>
-  <div class="linksdiv">
-    <h2>Tompkins County Fire Departments</h2>
+  <div class="linksdiv columns-2">
+    <h2 class="underline">Tompkins County Fire Departments</h2>
     <ul>
       <li v-for="tompkinsLink in tompkinsLinks" :key="tompkinsLink.id">
         <a :href="tompkinsLink.url" target="_blank">
@@ -9,7 +9,7 @@
       </li>
     </ul>
 
-    <h2>Other Fire Agencies</h2>
+    <h2 class="underline">Other Fire Agencies</h2>
     <ul>
       <li v-for="otherFireLink in otherFireLinks" :key="otherFireLink.id">
         <a :href="otherFireLink.url" target="_blank">
@@ -18,7 +18,7 @@
       </li>
     </ul>
 
-    <h2>Emergency Medical Services</h2>
+    <h2 class="underline">Emergency Medical Services</h2>
     <ul>
       <li
         v-for="emergencyMedicalLink in emergencyMedicalLinks"
@@ -30,7 +30,7 @@
       </li>
     </ul>
 
-    <h2>Law Enforcement Agencies</h2>
+    <h2 class="underline">Law Enforcement Agencies</h2>
     <ul>
       <li v-for="lawEnfLink in lawEnfLinks" :key="lawEnfLink.id">
         <a :href="lawEnfLink.url" target="_blank">
@@ -39,7 +39,7 @@
       </li>
     </ul>
 
-    <h2>Local Government</h2>
+    <h2 class="underline">Local Government</h2>
     <ul>
       <li v-for="localGovLink in localGovLinks" :key="localGovLink.id">
         <a :href="localGovLink.url" target="_blank">
@@ -48,7 +48,7 @@
       </li>
     </ul>
 
-    <h2>Other Local Services</h2>
+    <h2 class="underline">Other Local Services</h2>
     <ul>
       <li v-for="localServsLink in localServsLinks" :key="localServsLink.id">
         <a :href="localServsLink.url" target="_blank">
@@ -281,15 +281,3 @@ export default {
   },
 };
 </script>
-
-<style>
-  .linksdiv {
-    column-count: 2;
-    column-span: all;
-    text-align:initial;
-  }
-
-  h2 {
-    text-align: center;
-  }
-</style>

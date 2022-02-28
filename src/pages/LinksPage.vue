@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Links</h1>
+  <div class="componentCard">
+    <h1 class="underline">Links</h1>
     <p>
       This page is a directory of other emergency services organizations. For
       important public safety information to help protect your family, see our

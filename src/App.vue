@@ -1,17 +1,17 @@
 <template>
-  <div class="headerContainer">
+  <div class="headerContainer text-xl p-16 flex justify-center items-center text-white">
     <router-link to="/"
       ><img
-        class="bannerImg"
+        class="bannerImg order-1 h-40"
         :src="'../assets/danbybadge.png'"
         alt="Image of the Danby Volunteer Fire Company badge."
     /></router-link>
     <div class="titles">
-    <div class="maintitle">Danby Volunteer Fire Company</div>
-    <div class="subtitle">Danby, NY • Organized 1946</div>
+    <div class="maintitle order-2">Danby Volunteer Fire Company</div>
+    <div class="subtitle order-3 content-end p-3">Danby, NY • Organized 1946</div>
     </div>
   </div>
-  <nav>
+  <nav class="text-danby-yellow">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About Us</router-link> |
     <router-link to="/safety">Safety Information</router-link> |
@@ -22,7 +22,7 @@
   </nav>
   <router-view />
   <br />
-  <footer>© DVFC 2022</footer>
+  <footer class="text-danby-yellow text-center">© DVFC 2022</footer>
 </template>
 
 <style>
@@ -45,25 +45,9 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #cd9b3c;
+  color: #cd9a3c;
 }
 
-footer {
-  text-align: center;
-  color: #cd9b3c;
-}
-
-.headerContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px;
-  color: white;
-  font-size: 20px;
-}
-.bannerImg {
-  max-height: 150px;
-}
 .maintitle {
   padding-left: 20px;
   font-size: 40px;
