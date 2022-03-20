@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Contact Us page</h1>
+        <h1>Contact Us</h1>
         <!--
             Contact Us
 In an emergency: Call 9-1-1

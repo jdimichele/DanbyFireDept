@@ -1,61 +1,77 @@
 <template>
-  <div class="linksdiv columns-2">
-    <h2 class="underline">Tompkins County Fire Departments</h2>
-    <ul>
-      <li v-for="tompkinsLink in tompkinsLinks" :key="tompkinsLink.id">
-        <a :href="tompkinsLink.url" target="_blank">
-          {{ tompkinsLink.name }}
-        </a>
-      </li>
-    </ul>
+  <div class="grid grid-cols-2">
+    <div>
+      <h2 class="underline ml-5">Tompkins County Fire Departments</h2>
+      <ul class="pb-10 ml-10">
+        <li v-for="tompkinsLink in tompkinsLinks" :key="tompkinsLink.id">
+          <a :href="tompkinsLink.url" target="_blank" class="hover:underline">
+            {{ tompkinsLink.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <h2 class="underline">Other Fire Agencies</h2>
-    <ul>
-      <li v-for="otherFireLink in otherFireLinks" :key="otherFireLink.id">
-        <a :href="otherFireLink.url" target="_blank">
-          {{ otherFireLink.name }}
-        </a>
-      </li>
-    </ul>
+    <div>
+      <h2 class="underline ml-5">Other Fire Agencies</h2>
+      <ul class="pb-10 ml-10">
+        <li v-for="otherFireLink in otherFireLinks" :key="otherFireLink.id">
+          <a :href="otherFireLink.url" target="_blank" class="hover:underline">
+            {{ otherFireLink.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <h2 class="underline">Emergency Medical Services</h2>
-    <ul>
-      <li
-        v-for="emergencyMedicalLink in emergencyMedicalLinks"
-        :key="emergencyMedicalLink.id"
-      >
-        <a :href="emergencyMedicalLink.url" target="_blank">
-          {{ emergencyMedicalLink.name }}
-        </a>
-      </li>
-    </ul>
+    <div>
+      <h2 class="underline ml-5">Emergency Medical Services</h2>
+      <ul class="pb-10 ml-10">
+        <li
+          v-for="emergencyMedicalLink in emergencyMedicalLinks"
+          :key="emergencyMedicalLink.id"
+        >
+          <a
+            :href="emergencyMedicalLink.url"
+            target="_blank"
+            class="hover:underline"
+          >
+            {{ emergencyMedicalLink.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <h2 class="underline">Law Enforcement Agencies</h2>
-    <ul>
-      <li v-for="lawEnfLink in lawEnfLinks" :key="lawEnfLink.id">
-        <a :href="lawEnfLink.url" target="_blank">
-          {{ lawEnfLink.name }}
-        </a>
-      </li>
-    </ul>
+    <div>
+      <h2 class="underline ml-5">Law Enforcement Agencies</h2>
+      <ul class="pb-10 ml-10">
+        <li v-for="lawEnfLink in lawEnfLinks" :key="lawEnfLink.id">
+          <a :href="lawEnfLink.url" target="_blank" class="hover:underline">
+            {{ lawEnfLink.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <h2 class="underline">Local Government</h2>
-    <ul>
-      <li v-for="localGovLink in localGovLinks" :key="localGovLink.id">
-        <a :href="localGovLink.url" target="_blank">
-          {{ localGovLink.name }}
-        </a>
-      </li>
-    </ul>
+    <div>
+      <h2 class="underline ml-5">Local Government</h2>
+      <ul class="pb-10 ml-10">
+        <li v-for="localGovLink in localGovLinks" :key="localGovLink.id">
+          <a :href="localGovLink.url" target="_blank" class="hover:underline">
+            {{ localGovLink.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <h2 class="underline">Other Local Services</h2>
-    <ul>
-      <li v-for="localServsLink in localServsLinks" :key="localServsLink.id">
-        <a :href="localServsLink.url" target="_blank">
-          {{ localServsLink.name }}
-        </a>
-      </li>
-    </ul>
+    <div>
+      <h2 class="underline ml-5">Other Local Services</h2>
+      <ul class="pb-10 ml-10">
+        <li v-for="localServsLink in localServsLinks" :key="localServsLink.id">
+          <a :href="localServsLink.url" target="_blank" class="hover:underline">
+            {{ localServsLink.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

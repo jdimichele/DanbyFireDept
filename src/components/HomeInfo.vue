@@ -1,14 +1,14 @@
 <template>
   <div class="home-info componentCard">
     <!-- News/Blog page that will need more integration in the future. -->
-    <h1>{{ msg }}</h1>
+    <h1 class="underline">{{ msg }}</h1>
     <p>
       Welcome to the Danby Volunteer Fire Company's new website. We are planning
       to add more content over time, such as more information about our
       equipment. For the time being, we would like to direct your attention to
       two important sections of this website:
     </p>
-    <ui>
+    <ui class="p-1">
       <li>
         We are an all-volunteer fire company and are perpetually shorthanded for
         a variety of tasks, including both emergency response and non-emergency
