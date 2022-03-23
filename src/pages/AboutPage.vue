@@ -108,7 +108,7 @@ export default {
   },
   data() {
     return {
-      carouselImages: ["Trucks", "test"],
+      carouselImages: ["Trucks", "truck401"],
     };
   },
 };
