@@ -12,6 +12,11 @@ module.exports = {
         "danby-yellow": "#cd9a3c",
       },
     },
+    listStyleType: {
+      square: 'square',
+      circle: 'circle',
+      disc: 'disc'
+    }
   },
   plugins: [],
 };

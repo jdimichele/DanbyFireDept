@@ -1,10 +1,7 @@
 <template>
   <div class="componentCard safety">
-      <h1>This is where we'll put that safety info.</h1>
-      <!--
-          We are perfectly glad to try to put ourselves out of work. Help us help you by preventing and preparing for emergencies:
-
-Medical
+    <h3 class="text-center">We are perfectly glad to try to put ourselves out of work. Help us help you by preventing and preparing for emergencies:</h3>
+    <h3 class="divide-y divide-solid">Medical</h3>
 Recognize a heart attack or stroke and know when to call 911:
 Warning Signs of a Heart Attack from the American Heart Association
 Stroke Symptoms from the National Stroke Association

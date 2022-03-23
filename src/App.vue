@@ -1,5 +1,7 @@
 <template>
-  <div class="headerContainer text-xl p-16 flex justify-center items-center text-white">
+  <div
+    class="headerContainer text-xl p-16 flex justify-center items-center text-white"
+  >
     <router-link to="/"
       ><img
         class="bannerImg order-1 h-40"
@@ -7,8 +9,10 @@
         alt="Image of the Danby Volunteer Fire Company badge."
     /></router-link>
     <div class="titles">
-    <div class="maintitle order-2">Danby Volunteer Fire Company</div>
-    <div class="subtitle order-3 content-end p-3">Danby, NY • Organized 1946</div>
+      <div class="maintitle order-2">Danby Volunteer Fire Company</div>
+      <div class="subtitle order-3 content-end p-3">
+        Danby, NY • Organized 1946
+      </div>
     </div>
   </div>
   <nav class="text-danby-yellow">
