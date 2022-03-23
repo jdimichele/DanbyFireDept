@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         "danby-yellow": "#cd9a3c",
+        "danby-red" : "#ab2424",
       },
     },
     listStyleType: {
