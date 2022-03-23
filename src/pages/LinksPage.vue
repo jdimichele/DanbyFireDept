@@ -1,13 +1,13 @@
 <template>
   <div class="componentCard">
-    <h1 class="underline">Links</h1>
+    <h1 class="underline text-center">Links</h1>
     <p>
       This page is a directory of other emergency services organizations. For
       important public safety information to help protect your family, see our
       <router-link to="/safety">Safety Information</router-link> page.
     </p>
     <br />
-  <all-links></all-links>
+  <all-links />
   </div>
 </template>
 
@@ -21,9 +21,3 @@ export default {
   },
 };
 </script>
-
-<style>
-  h1 {
-   text-align: center; 
-  }
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="safety">
+  <div class="componentCard safety">
       <h1>This is where we'll put that safety info.</h1>
       <!--
           We are perfectly glad to try to put ourselves out of work. Help us help you by preventing and preparing for emergencies:

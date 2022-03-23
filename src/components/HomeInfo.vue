@@ -1,22 +1,22 @@
 <template>
   <div class="home-info componentCard">
     <!-- News/Blog page that will need more integration in the future. -->
-    <h1 class="underline">{{ msg }}</h1>
-    <p>
+    <h1 class="underline text-center">{{ msg }}</h1>
+    <p class="py-5">
       Welcome to the Danby Volunteer Fire Company's new website. We are planning
       to add more content over time, such as more information about our
       equipment. For the time being, we would like to direct your attention to
       two important sections of this website:
     </p>
-    <ui class="p-1">
-      <li>
+    <ui>
+      <li class="p-5">
         We are an all-volunteer fire company and are perpetually shorthanded for
         a variety of tasks, including both emergency response and non-emergency
         duties. If you may have the time and interest to volunteer, please see
         our new <router-link to="/volunteer">Volunteer Information</router-link> page for more
         details.
       </li>
-      <li>
+      <li class="p-5">
         Although we do our best to respond promptly when called, we cannot be
         there instantaneously, and the greatest factor in a good outcome to an
         emergency is when the citizens who are on the scene when it happens know
@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: "HomeInfo",
+  name: "home-info",
   props: {
     msg: String,
   },

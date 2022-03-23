@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="componentCard text-center">
         <h1>Training</h1>
         <!--
             Calendar
