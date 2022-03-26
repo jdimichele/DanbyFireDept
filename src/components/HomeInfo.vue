@@ -1,5 +1,5 @@
 <template>
-  <div class="home-info componentCard">
+  <div class="componentCard">
     <!-- News/Blog page that will need more integration in the future. -->
     <h1 class="underline text-center">{{ msg }}</h1>
     <p class="py-5">

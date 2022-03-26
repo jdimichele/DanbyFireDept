@@ -1,10 +1,11 @@
 <template>
+<!-- Add expand feature to carousel to see image full size. -->
   <div class="carousel">
     <slot :currentImage="currentImage" />
     <!-- Navigation for Carousel -->
     <div
       v-if="navEnabled"
-      class="navigate p-4 h-56 w-56 absolute flex justify-center items-center"
+      class="navigate h-full w-full p-3 absolute flex items-center"
     >
       <div class="toggle-left flex-1">
         <i
@@ -34,7 +35,6 @@
       >
       </span>
     </div>
-    <!-- -->
   </div>
 </template>
 

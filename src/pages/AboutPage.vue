@@ -1,20 +1,23 @@
 <template>
-  <div class="componentCard grid grid-flow-row-dense grid-cols-2 grid-rows-2">
-    <!-- All of this is currently placehold until converted into a Vue component. --->
-    <Carousel
-      :navigation="true"
-      :pagination="false"
-      :startAutoPlay="true"
-      :timeout="5000"
-      class="relative"
-      v-slot="{ currentImage }"
-    >
-      <CarouselSlide v-for="(image, index) in carouselImages" :key="index">
-        <div v-show="currentImage === index + 1" class="slide-info absolute">
-          <img :src="require(`../assets/${image}.png`)" alt="" class="" />
-        </div>
-      </CarouselSlide>
-    </Carousel>
+  <div class="componentCard grid grid-cols-2 grid-row-1 gap-10">
+    <div class="relative col-span-1 row-span-1 top-5">
+      <Carousel
+        :navigation="true"
+        :pagination="false"
+        :startAutoPlay="true"
+        :timeout="5000"
+        v-slot="{ currentImage }"
+      >
+        <CarouselSlide v-for="(image, index) in carouselImages" :key="index" class="absolute container bg-black rounded-lg">
+          <div
+            v-show="currentImage === index + 1"
+            class="relative justify-center align-middle max-w-screen max-h-screen"
+          >
+            <img class="m-auto" :src="require(`../assets/${image}.png`)" />
+          </div>
+        </CarouselSlide>
+      </Carousel>
+    </div>
     <div class="col-span-1">
       <p>
         The <b>Danby Volunteer Fire Company</b> is a 100%-volunteer fire company
@@ -143,8 +146,8 @@
       </ul>
     </div>
 
-    <div class="col-span-1">
-      <h3>Who We Are 2020 Officers:</h3>
+    <div class="col-span-2">
+      <h3 class="underline">Who We Are 2020 Officers:</h3>
       Line Officers Staff Officers Chief John Gaden President Peter Goodman 1st
       Assistant Chief Tyler Dorn Vice President Roger Grant 2nd Assistant Chief
       Dan Saracino Secretary Sharon Gaden 3rd Assistant Chief Peter Goodman
