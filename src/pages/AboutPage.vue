@@ -161,70 +161,78 @@
       </ul>
     </div>
 
-    <div class="justify-center align-middle col-span-2">
+    <div class="col-span-2">
       <h1 class="underline text-center">Who We Are</h1>
       <h1 class="underline text-center">2020 Officers:</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Line Officers</th>
-            <th>Staff Officers</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Chief</th>
-            <td>John Gaden</td>
+      <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table class="min-w-full">
+                <thead class="border-b">
+                  <tr>
+                    <th colspan="2" class="px-6 py-2">Line Officers</th>
+                    <th colspan="2" class="px-6 py-2">Staff Officers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b">
+                    <th class="text-right pr-10">Chief</th>
+                    <td>John Gaden</td>
 
-            <th>President</th>
-            <td>Peter Goodman</td>
-          </tr>
+                    <th class="text-right pr-10">President</th>
+                    <td>Peter Goodman</td>
+                  </tr>
 
-          <tr>
-            <th>1st Assistant Chief</th>
-            <td>Tyler Dorn</td>
+                  <tr class="border-b">
+                    <th class="text-right pr-10">1st Assistant Chief</th>
+                    <td>Tyler Dorn</td>
 
-            <th>Vice President</th>
-            <td>Roger Grant</td>
-          </tr>
+                    <th class="text-right pr-10">Vice President</th>
+                    <td>Roger Grant</td>
+                  </tr>
 
-          <tr>
-            <th>2nd Assistant Chief</th>
-            <td>Dan Saracino</td>
+                  <tr class="border-b">
+                    <th class="text-right pr-10">2nd Assistant Chief</th>
+                    <td>Dan Saracino</td>
 
-            <th>Secretary</th>
-            <td>Sharon Gaden</td>
-          </tr>
+                    <th class="text-right pr-10">Secretary</th>
+                    <td>Sharon Gaden</td>
+                  </tr>
 
-          <tr>
-            <th>3rd Assistant Chief</th>
-            <td>Peter Goodman</td>
+                  <tr class="border-b">
+                    <th class="text-right pr-10">3rd Assistant Chief</th>
+                    <td>Peter Goodman</td>
 
-            <th>Treasurer</th>
-            <td>Steve Hilsdorf</td>
-          </tr>
+                    <th class="text-right pr-10">Treasurer</th>
+                    <td>Steve Hilsdorf</td>
+                  </tr>
 
-          <tr>
-            <th>Lieutenant</th>
-            <td>Simon Wyatt</td>
+                  <tr class="border-b">
+                    <th class="text-right pr-10">Lieutenant</th>
+                    <td>Simon Wyatt</td>
 
-            <th></th>
-            <td></td>
-          </tr>
+                    <th></th>
+                    <td></td>
+                  </tr>
 
-          <tr>
-            <td></td>
-            <th>At Large Director</th>
-            <td>Amy Westmiller</td>
-          </tr>
+                  <tr class="border-b">
+                    <td></td>
+                    <th class="text-right pr-10">At Large Director</th>
+                    <td>Amy Westmiller</td>
+                  </tr>
 
-          <tr>
-            <td></td>
-            <th>At Large Director</th>
-            <td>Steve Hilsdorf</td>
-          </tr>
-        </tbody>
-      </table>
+                  <tr class="border-b">
+                    <td></td>
+                    <th class="text-right pr-10">At Large Director</th>
+                    <td>Steve Hilsdorf</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
