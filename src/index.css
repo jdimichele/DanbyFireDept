@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  #app {
+    font-family: "Scheherazade New";
+    font-size: 22px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  }
+
+  nav a {
+    font-weight: bold;
+    color: #ffffff;
+  }
+
   html {
     background-image: linear-gradient(#1c1e20, #ab2424);
     min-height: 100vh;

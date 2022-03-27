@@ -1,7 +1,7 @@
 <template>
   <div class="componentCard">
     <!-- News/Blog page that will need more integration in the future. -->
-    <h1 class="underline text-center">{{ msg }}</h1>
+    <h1 class="underline text-center p-2">{{ msg }}</h1>
     <p class="py-5">
       Welcome to the Danby Volunteer Fire Company's new website. We are planning
       to add more content over time, such as more information about our

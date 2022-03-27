@@ -9,13 +9,15 @@
         alt="Image of the Danby Volunteer Fire Company badge."
     /></router-link>
     <div class="titles">
-      <div class="maintitle md:order-2 order-2">Danby Volunteer Fire Company</div>
-      <div class="subtitle order-3 content-end p-3">
+      <div class="maintitle text-4xl pl-5 md:order-2 order-2">
+        Danby Volunteer Fire Company
+      </div>
+      <div class="subtitle text-3xl text-center order-3 content-end p-3">
         Danby, NY • Organized 1946
       </div>
     </div>
   </div>
-  <nav class="text-danby-yellow">
+  <nav class="text-danby-yellow font-bold text-center p-7">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About Us</router-link> |
     <router-link to="/safety">Safety Information</router-link> |
@@ -30,36 +32,7 @@
 </template>
 
 <style>
-#app {
-  font-family: "Scheherazade New";
-  font-size: 22px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-  text-align: center;
-}
-
-nav a {
-  font-weight: bold;
-  color: #ffffff;
-}
-
 nav a.router-link-exact-active {
   color: #cd9a3c;
-}
-
-.maintitle {
-  padding-left: 20px;
-  font-size: 40px;
-}
-.subtitle {
-  padding-left: 20px;
-  font-size: 30px;
-  vertical-align: bottom;
-  text-align: center;
 }
 </style>

@@ -8,7 +8,11 @@
         :timeout="5000"
         v-slot="{ currentImage }"
       >
-        <CarouselSlide v-for="(image, index) in carouselImages" :key="index" class="absolute container bg-black rounded-lg">
+        <CarouselSlide
+          v-for="(image, index) in carouselImages"
+          :key="index"
+          class="absolute container bg-black rounded-lg"
+        >
           <div
             v-show="currentImage === index + 1"
             class="relative justify-center align-middle max-w-screen max-h-screen"
@@ -19,7 +23,7 @@
       </Carousel>
     </div>
     <div class="col-span-1">
-      <p>
+      <p class="indent-8 pt-5 pb-2">
         The <b>Danby Volunteer Fire Company</b> is a 100%-volunteer fire company
         protecting most of the town of
         <a
@@ -37,7 +41,7 @@
         >. We are one of two fire companies organized within the Danby Fire
         District.
       </p>
-      <p>
+      <p class="indent-8 pt-5 pb-2">
         Our mission is to provide the best possible fire protection, emergency
         medical, and related public safety services to the residents of the
         Danby Fire District. Under mutual aid agreements, we also respond when
@@ -46,23 +50,34 @@
     </div>
 
     <div class="col-span-1">
-      <h3 class="underline">What We Do</h3>
-      <p>
+      <h1 class="underline">What We Do:</h1>
+      <p class="indent-8 pt-2">
         Many people's image of firefighters comes from Hollywood, where paid,
         full-time firefighters staff an urban firehouse 24/7. Though this is
         accurate of Ithaca and most larger cities, rural America is
-        predominantly covered by volunteer fire departments. According to the
-        National Fire Protection Association, 65% of U.S. firefighters are
-        volunteers (source).
+        predominantly covered by
+        <a
+          href="https://en.wikipedia.org/wiki/Volunteer_fire_department"
+          target="_blank"
+          class="hover:underline text-blue-700"
+          >volunteer fire departments</a
+        >. According to the National Fire Protection Association, 65% of U.S.
+        firefighters are volunteers
+        <a
+          href="https://www.nfpa.org/News-and-Research/Data-research-and-tools/Emergency-Responders/US-fire-department-profile"
+          target="_blank"
+          class="hover:underline text-blue-700"
+          >(source)</a
+        >.
       </p>
-      <p>
+      <p class="indent-8 pt-1">
         Danby is all-volunteer, from the newest recruit to the fire chief. Our
         members are regular folks who typically come to the company with no
         background in the fire service, and receive all their training through
         us. In the rest of their lives they are bus drivers, dishwashers,
         students, professors, lawyers, stay-at-home moms and retirees.
       </p>
-      <p>
+      <p class="indent-8 pt-1">
         Most of the time there is no one staffing the firehouse. Members have
         pagers that alert them to emergencies. They respond from wherever they
         are in their lives — home, the grocery store, bed — directly to the
@@ -70,7 +85,7 @@
         long distances inherent to responding in a rural area, this means time
         is often against us.
       </p>
-      <p>
+      <p class="indent-8 pt-1">
         Fire suppression is only a small portion of our annual call volume. The
         majority of our calls are for medical emergencies. We are not an
         ambulance service, which means we do not transport patients to the
@@ -80,8 +95,8 @@
     </div>
 
     <div class="col-span-1">
-      <h3 class="underline">Services provided:</h3>
-      <ul class="list-inside list-disc">
+      <h1 class="underline">Services provided:</h1>
+      <ul class="list-inside list-disc pt-2">
         <li>
           Emergency medical services (non-transporting first response service
           assisting Bangs Ambulance)
@@ -146,13 +161,70 @@
       </ul>
     </div>
 
-    <div class="col-span-2">
-      <h3 class="underline">Who We Are 2020 Officers:</h3>
-      Line Officers Staff Officers Chief John Gaden President Peter Goodman 1st
-      Assistant Chief Tyler Dorn Vice President Roger Grant 2nd Assistant Chief
-      Dan Saracino Secretary Sharon Gaden 3rd Assistant Chief Peter Goodman
-      Treasurer Steve Hilsdorf Lieutenant Simon Wyatt At Large Director Amy
-      Westmiller At Large Director Steve Hilsdorf
+    <div class="justify-center align-middle col-span-2">
+      <h1 class="underline text-center">Who We Are</h1>
+      <h1 class="underline text-center">2020 Officers:</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Line Officers</th>
+            <th>Staff Officers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Chief</th>
+            <td>John Gaden</td>
+
+            <th>President</th>
+            <td>Peter Goodman</td>
+          </tr>
+
+          <tr>
+            <th>1st Assistant Chief</th>
+            <td>Tyler Dorn</td>
+
+            <th>Vice President</th>
+            <td>Roger Grant</td>
+          </tr>
+
+          <tr>
+            <th>2nd Assistant Chief</th>
+            <td>Dan Saracino</td>
+
+            <th>Secretary</th>
+            <td>Sharon Gaden</td>
+          </tr>
+
+          <tr>
+            <th>3rd Assistant Chief</th>
+            <td>Peter Goodman</td>
+
+            <th>Treasurer</th>
+            <td>Steve Hilsdorf</td>
+          </tr>
+
+          <tr>
+            <th>Lieutenant</th>
+            <td>Simon Wyatt</td>
+
+            <th></th>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <th>At Large Director</th>
+            <td>Amy Westmiller</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <th>At Large Director</th>
+            <td>Steve Hilsdorf</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>

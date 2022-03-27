@@ -1,17 +1,23 @@
 <template>
   <div class="componentCard safety">
-    <h3 class="text-center">
+    <h3 class="text-center pt-3">
       We are perfectly glad to try to put ourselves out of work. Help us help
       you by preventing and preparing for emergencies:
     </h3>
-    <div class="relative flex-grow border-b-2 border-danby-red">
-      <h3 class="pl-6">Medical</h3>
+    <div class="flex-grow border-b-2 border-danby-red">
+      <h3 class="pl-6 font-bold">Medical</h3>
     </div>
-    Recognize a heart attack or stroke and know when to call 911: Warning Signs
-    of a Heart Attack from the American Heart Association Stroke Symptoms from
-    the National Stroke Association These websites also contain valuable
+    <div class="p-5">
+    <h3>Recognize a heart attack or stroke and know when to call 911:</h3> 
+    Warning Signs of a Heart Attack from the American Heart Association 
+    Stroke Symptoms from the National Stroke Association
+    These websites also contain valuable
     information about choosing a healthier lifestyle to reduce your, or your
-    loved ones', risk of having a heart attack or stroke. Learn CPR and First
+    loved ones', risk of having a heart attack or stroke. 
+    
+    
+    
+    Learn CPR and First
     Aid: Classes are regularly taught locally by the American Red Cross. How To
     Safely Dispose of Medical “Sharps”: Many people in the community generate
     “sharps” (for example, used syringes) for a variety of reasons (for example,
@@ -44,5 +50,6 @@
     clearly numbered to help us find you in an emergency. See the Fire Company's
     page about House Numbering for more information and to order reflective
     number signs.
+    </div>
   </div>
 </template>
