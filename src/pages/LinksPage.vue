@@ -1,6 +1,6 @@
 <template>
   <div class="componentCard">
-    <h1 class="underline text-center">Links</h1>
+    <h1 class="underline text-center py-3">Links</h1>
     <p>
       This page is a directory of other emergency services organizations. For
       important public safety information to help protect your family, see our

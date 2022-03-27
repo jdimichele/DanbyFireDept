@@ -1,10 +1,16 @@
 <template>
   <div class="grid grid-cols-2">
     <div>
-      <h2 class="underline ml-5">Tompkins County Fire Departments</h2>
+      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        Tompkins County Fire Departments
+      </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
         <li v-for="tompkinsLink in tompkinsLinks" :key="tompkinsLink.id">
-          <a :href="tompkinsLink.url" target="_blank" class="hover:underline">
+          <a
+            :href="tompkinsLink.url"
+            target="_blank"
+            class="hover:underline hover:text-blue-700"
+          >
             {{ tompkinsLink.name }}
           </a>
         </li>
@@ -12,10 +18,16 @@
     </div>
 
     <div>
-      <h2 class="underline ml-5">Other Fire Agencies</h2>
+      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        Other Fire Agencies
+      </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
         <li v-for="otherFireLink in otherFireLinks" :key="otherFireLink.id">
-          <a :href="otherFireLink.url" target="_blank" class="hover:underline">
+          <a
+            :href="otherFireLink.url"
+            target="_blank"
+            class="hover:underline hover:text-blue-700"
+          >
             {{ otherFireLink.name }}
           </a>
         </li>
@@ -23,7 +35,9 @@
     </div>
 
     <div>
-      <h2 class="underline ml-5">Emergency Medical Services</h2>
+      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        Emergency Medical Services
+      </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
         <li
           v-for="emergencyMedicalLink in emergencyMedicalLinks"
@@ -32,7 +46,7 @@
           <a
             :href="emergencyMedicalLink.url"
             target="_blank"
-            class="hover:underline"
+            class="hover:underline hover:text-blue-700"
           >
             {{ emergencyMedicalLink.name }}
           </a>
@@ -41,10 +55,16 @@
     </div>
 
     <div>
-      <h2 class="underline ml-5">Law Enforcement Agencies</h2>
+      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        Law Enforcement Agencies
+      </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
         <li v-for="lawEnfLink in lawEnfLinks" :key="lawEnfLink.id">
-          <a :href="lawEnfLink.url" target="_blank" class="hover:underline">
+          <a
+            :href="lawEnfLink.url"
+            target="_blank"
+            class="hover:underline hover:text-blue-700"
+          >
             {{ lawEnfLink.name }}
           </a>
         </li>
@@ -52,10 +72,16 @@
     </div>
 
     <div>
-      <h2 class="underline ml-5">Local Government</h2>
+      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        Local Government
+      </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
         <li v-for="localGovLink in localGovLinks" :key="localGovLink.id">
-          <a :href="localGovLink.url" target="_blank" class="hover:underline">
+          <a
+            :href="localGovLink.url"
+            target="_blank"
+            class="hover:underline hover:text-blue-700"
+          >
             {{ localGovLink.name }}
           </a>
         </li>
@@ -63,10 +89,16 @@
     </div>
 
     <div>
-      <h2 class="underline ml-5">Other Local Services</h2>
+      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        Other Local Services
+      </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
         <li v-for="localServsLink in localServsLinks" :key="localServsLink.id">
-          <a :href="localServsLink.url" target="_blank" class="hover:underline">
+          <a
+            :href="localServsLink.url"
+            target="_blank"
+            class="hover:underline hover:text-blue-700"
+          >
             {{ localServsLink.name }}
           </a>
         </li>

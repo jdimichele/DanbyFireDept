@@ -1,6 +1,7 @@
 <template>
   <div class="volunteer componentCard text-center">
-    <h1>This is the volunteer page.</h1>
+    <h1>We're currently working on this page!</h1>
+    <h1>We hope to have a more interactive form system implemented soon.</h1>
     <!--
         Every firefighter and emergency medical care provider in the Danby Fire District is a volunteer, but no amount of dedication can make up for the fact that there just aren't enough of us. We need additional volunteers. Almost everybody joins with no prior emergency qualifications or experience; all training and equipment is provided at no cost to the volunteer. There's a variety of ways you can get involved, depending on your interests and availability:
 
