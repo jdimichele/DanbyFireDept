@@ -46,8 +46,8 @@
         </li>
       </ul>
       <ul class="indent-10">
-        <li><b>Webmaster:</b> Simon Wyatt swyatt@danbyfiredistrict.org</li>
-        <li><b>Requests for station use:</b> danbyfirestation@gmail.com</li>
+        <li><b>Requests for station use:</b></li>
+        <li class="indent-10">danbyfirestation@gmail.com</li>
       </ul>
     </div>
   </div>
