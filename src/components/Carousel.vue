@@ -1,6 +1,6 @@
 <template>
 <!-- Add expand feature to carousel to see image full size. -->
-  <div class="carousel">
+  <div class="carousel h-full flex items-center bg-black rounded-lg">
     <slot :currentImage="currentImage" />
     <!-- Navigation for Carousel -->
     <div

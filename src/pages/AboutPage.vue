@@ -1,6 +1,6 @@
 <template>
-  <div class="componentCard grid grid-cols-2 grid-row-1 gap-10">
-    <div class="relative col-span-1 row-span-1 top-5">
+  <div class="componentCard grid grid-cols-2 grid-row-1 gap-10 h-full">
+    <div class="relative col-span-1 row-span-1 top-5 h-full">
       <Carousel
         :navigation="true"
         :pagination="false"
@@ -11,7 +11,7 @@
         <CarouselSlide
           v-for="(image, index) in carouselImages"
           :key="index"
-          class="absolute container bg-black rounded-lg"
+          class="absolute container"
         >
           <div
             v-show="currentImage === index + 1"
