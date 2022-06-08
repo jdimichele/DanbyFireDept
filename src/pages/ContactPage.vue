@@ -42,6 +42,29 @@
     <div class="pb-8">
       <ul>
         <li class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+          Social Media:
+        </li>
+        <li class="indent-10">
+          <a
+            href="https://www.facebook.com/DanbyVolunteerFireCompany"
+            target="_blank"
+            class="hover:underline hover:text-blue-700"
+            >Facebook</a
+          >
+        </li>
+        <li class="indent-10">
+          <a
+            href="https://twitter.com/DanbyFire"
+            target="_blank"
+            class="hover:underline hover:text-blue-700"
+            >Twitter</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="pb-8">
+      <ul>
+        <li class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
           Email:
         </li>
       </ul>

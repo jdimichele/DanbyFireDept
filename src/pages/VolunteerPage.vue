@@ -1,7 +1,35 @@
 <template>
-  <div class="volunteer componentCard text-center">
-    <h1>We're currently working on this page!</h1>
-    <h1>We hope to have a more interactive form system implemented soon.</h1>
+  <div class="volunteer componentCard">
+    <h3 class="text-center py-3">
+      We are continuously looking for more volunteers and nearly every volunteer
+      joins with no prior emergency qualifications or experience; all training
+      and equipment is provided at no cost to the volunteer.
+    </h3>
+    <p class="indent-8 pt-5 pb-2">
+      There's a variety of ways you can get involved, depending on your
+      interests and availability. The first step is showing up:
+    </p>
+    <p class="indent-8 pt-5 pb-2">
+      Find us at the Fire station at
+      <a
+        href="https://www.google.com/search?q=1780+Danby+Rd&oq=1780+Danby+Rd&aqs=edge..69i57&sourceid=chrome&ie=UTF-8#"
+        target="_blank"
+        class="hover:underline hover:text-blue-700"
+        >1780 Danby Rd</a
+      >
+      on Monday nights at 7pm or reach out to us on
+      <a
+        href="https://www.facebook.com/DanbyVolunteerFireCompany"
+        target="_blank"
+        class="hover:underline hover:text-blue-700"
+        >Facebook</a
+      >.
+    </p>
+
+    <div class="text-center py-3">
+      <h1>We are currently working on this page!</h1>
+      <h1>We hope to have a more interactive form system implemented soon.</h1>
+    </div>
     <!--
         Every firefighter and emergency medical care provider in the Danby Fire District is a volunteer, but no amount of dedication can make up for the fact that there just aren't enough of us. We need additional volunteers. Almost everybody joins with no prior emergency qualifications or experience; all training and equipment is provided at no cost to the volunteer. There's a variety of ways you can get involved, depending on your interests and availability:
 
