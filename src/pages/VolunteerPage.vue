@@ -14,14 +14,14 @@
       <a
         href="https://www.google.com/search?q=1780+Danby+Rd&oq=1780+Danby+Rd&aqs=edge..69i57&sourceid=chrome&ie=UTF-8#"
         target="_blank"
-        class="hover:underline hover:text-blue-700"
+        class="text-blue-700 hover:underline hover:text-blue-700"
         >1780 Danby Rd</a
       >
       on Monday nights at 7pm or reach out to us on
       <a
         href="https://www.facebook.com/DanbyVolunteerFireCompany"
         target="_blank"
-        class="hover:underline hover:text-blue-700"
+        class="text-blue-700 hover:underline hover:text-blue-700"
         >Facebook</a
       >.
     </p>

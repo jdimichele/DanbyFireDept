@@ -48,7 +48,7 @@
           <a
             href="https://www.facebook.com/DanbyVolunteerFireCompany"
             target="_blank"
-            class="hover:underline hover:text-blue-700"
+            class="text-blue-700 hover:underline hover:text-blue-700"
             >Facebook</a
           >
         </li>
@@ -56,7 +56,7 @@
           <a
             href="https://twitter.com/DanbyFire"
             target="_blank"
-            class="hover:underline hover:text-blue-700"
+            class="text-blue-700 hover:underline hover:text-blue-700"
             >Twitter</a
           >
         </li>
