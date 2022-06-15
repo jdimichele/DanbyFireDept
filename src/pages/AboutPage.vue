@@ -186,7 +186,7 @@
 
                   <tr class="border-b">
                     <th class="text-right pr-10">1st Assistant Chief</th>
-                    <td>Tyler Dorn</td>
+                    <td>Dan Saracino</td>
 
                     <th class="text-right pr-10">Vice President</th>
                     <td>Roger Grant</td>
@@ -194,15 +194,13 @@
 
                   <tr class="border-b">
                     <th class="text-right pr-10">2nd Assistant Chief</th>
-                    <td>Dan Saracino</td>
+                    <td>Peter Goodman</td>
 
                     <th class="text-right pr-10">Secretary</th>
                     <td>Sharon Gaden</td>
                   </tr>
 
-                  <tr class="border-b">
-                    <th class="text-right pr-10">3rd Assistant Chief</th>
-                    <td>Peter Goodman</td>
+                
 
                     <th class="text-right pr-10">Treasurer</th>
                     <td>Steve Hilsdorf</td>
