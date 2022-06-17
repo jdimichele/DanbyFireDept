@@ -200,18 +200,12 @@
                     <td>Sharon Gaden</td>
                   </tr>
 
-                
-
-                    <th class="text-right pr-10">Treasurer</th>
-                    <td>Steve Hilsdorf</td>
-                  </tr>
-
                   <tr class="border-b">
                     <th class="text-right pr-10">Lieutenant</th>
                     <td>Simon Wyatt</td>
-
-                    <th></th>
-                    <td></td>
+                                      
+                    <th class="text-right pr-10">Treasurer</th>
+                    <td>Steve Hilsdorf</td>              
                   </tr>
 
                   <tr class="border-b">

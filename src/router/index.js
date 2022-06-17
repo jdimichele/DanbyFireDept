@@ -6,10 +6,12 @@ import VolunteerPage from '../pages/VolunteerPage.vue';
 import LinksPage from '../pages/LinksPage.vue';
 import ContactPage from '../pages/ContactPage.vue';
 import TrainingPage from '../pages/TrainingPage.vue';
+import NotFound from '../components/interactive/NotFound.vue';
 
 const routes = [
+  { path: '/', redirect: '/home'},
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: HomePage
   },
@@ -43,6 +45,7 @@ const routes = [
     name: 'training',
     component: TrainingPage
   },
+  { path: '/:notFound(.*)', component: NotFound},
 ]
 
 const router = createRouter({

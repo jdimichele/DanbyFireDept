@@ -1,5 +1,5 @@
 <template>
-  <div class="volunteer componentCard">
+  <div class="componentCard">
     <h3 class="text-center py-3">
       We are continuously looking for more volunteers and nearly every volunteer
       joins with no prior emergency qualifications or experience; all training
@@ -9,7 +9,7 @@
       There's a variety of ways you can get involved, depending on your
       interests and availability. The first step is showing up:
     </p>
-    <p class="indent-8 pt-5 pb-2">
+    <p class="indent-8 pt-5 pb-10">
       Find us at the Fire station at
       <a
         href="https://www.google.com/search?q=1780+Danby+Rd&oq=1780+Danby+Rd&aqs=edge..69i57&sourceid=chrome&ie=UTF-8#"
@@ -26,7 +26,8 @@
       >.
     </p>
     <volunteer-application></volunteer-application>
-    <!--
+  </div>
+  <!--
         Every firefighter and emergency medical care provider in the Danby Fire District is a volunteer, but no amount of dedication can make up for the fact that there just aren't enough of us. We need additional volunteers. Almost everybody joins with no prior emergency qualifications or experience; all training and equipment is provided at no cost to the volunteer. There's a variety of ways you can get involved, depending on your interests and availability:
 
 Opportunities
@@ -67,9 +68,6 @@ Fire police perform some of the most dangerous work for arguably the least recog
 
 In addition to the requirements for active members, fire police take a 21-hour New York State course and are sworn in as peace officers.
 
-Drivers
-We always require drivers for our emergency vehicles. Drivers must be full members of the Fire Company who have completed their probationary period, and must take an Emergency Vehicle Operations Course (18 hours) and undergo training on each specific vehicle they want to drive. Drivers of a fire vehicle must be trained as exterior or interior firefighters.
-
 Educated Citizen & Community Supporter
 We understand that not everyone has the free time to give to joining the Fire Company. If this is your situation, you can still help us help you by taking a little time to make sure that you know how to help prevent and prepare for common emergencies. See our Safety Information page to learn more. You can also support us at community events or make a donation.
 
@@ -83,16 +81,14 @@ After the probationary period, the members of the Fire Company will vote on whet
 Junior Members
 Individuals aged 16-17 are welcome to volunteer with us. Junior members must have the consent of their parent or guardian to apply. Junior members can participate in training, and in some emergency responses under supervision. Junior members are restricted from performing certain types of hazardous duties.
     -->
-  </div>
 </template>
 
 <script>
-import VolunteerApplication from "@/components/interactive/VolunteerApplication.vue"
+import VolunteerApplication from "@/components/interactive/VolunteerApplication.vue";
 
 export default {
   components: {
-    VolunteerApplication
-  }
-}
+    VolunteerApplication,
+  },
+};
 </script>
-
