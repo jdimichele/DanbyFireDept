@@ -1,4 +1,29 @@
 <template>
+  <h3 class="text-center py-3">
+    We are continuously looking for more volunteers and nearly every volunteer
+    joins with no prior emergency qualifications or experience; all training and
+    equipment is provided at no cost to the volunteer.
+  </h3>
+  <p class="indent-8 pt-5 pb-2">
+    There's a variety of ways you can get involved, depending on your interests
+    and availability. The first step is showing up:
+  </p>
+  <p class="indent-8 pt-5 pb-10">
+    Find us at the Fire station at
+    <a
+      href="https://www.google.com/search?q=1780+Danby+Rd&oq=1780+Danby+Rd&aqs=edge..69i57&sourceid=chrome&ie=UTF-8#"
+      target="_blank"
+      class="text-blue-700 hover:underline hover:text-blue-700"
+      >1780 Danby Rd</a
+    >
+    on Monday nights at 7pm or reach out to us on
+    <a
+      href="https://www.facebook.com/DanbyVolunteerFireCompany"
+      target="_blank"
+      class="text-blue-700 hover:underline hover:text-blue-700"
+      >Facebook</a
+    >.
+  </p>
   <div class="pb-10">
     <p>
       If you're interested in volunteering and joining our fire company, please
