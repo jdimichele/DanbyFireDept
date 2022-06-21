@@ -36,6 +36,7 @@
       <div class="pb-2 ml-10">
         <label for="first-name">First Name:</label>
         <input
+          class="ml-5"
           type="text"
           id="first-name"
           name="first-name"
