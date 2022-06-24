@@ -25,10 +25,10 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
 
+@layer components {
   .componentCard {
     @apply md:container md:mx-auto px-5 rounded-xl shadow-lg bg-white;
   }
 }
-
-

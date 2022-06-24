@@ -2,8 +2,6 @@ module.exports = {
   content: [
     "./index.html",
     "./src/components/*",
-    "./src/components/base",
-    "./src/components/interactive",
     "./src/pages/*",
     "./src/App.vue",
     "./src/main.js",
