@@ -3,6 +3,8 @@ import HomePage from "../pages/HomePage.vue";
 import AboutPage from "../pages/AboutPage.vue";
 import SafetyInfoPage from "../pages/SafetyInfoPage.vue";
 import VolunteerPage from "../pages/VolunteerPage.vue";
+import VolunteerRoles from "../components/subpages/VolunteerRoles.vue";
+import VolunteerApplication from "../components/subpages/VolunteerApplication.vue";
 import LinksPage from "../pages/LinksPage.vue";
 import ContactPage from "../pages/ContactPage.vue";
 import TrainingPage from "../pages/TrainingPage.vue";
@@ -32,6 +34,18 @@ const routes = [
     path: "/volunteer",
     name: "volunteer",
     component: VolunteerPage,
+    children: [
+      {
+        path: "/roles",
+        name: "roles",
+        component: VolunteerRoles,
+      },
+      {
+        path: "/apply",
+        name: "apply",
+        component: VolunteerApplication,
+      },
+    ],
   },
   {
     path: "/links",
@@ -57,7 +71,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  base: '/',
+  base: "/",
   routes,
 });
 

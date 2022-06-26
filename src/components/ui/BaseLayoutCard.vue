@@ -23,8 +23,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About Us</router-link> |
       <router-link to="/safety">Safety Information</router-link> |
-      <router-link to="/volunteer">Volunteer</router-link> |
-      <router-link to="/links">Links</router-link> |
+      <router-link to="/volunteer">Volunteer</router-link>
+      | <router-link to="/links">Links</router-link> |
       <router-link to="/contact">Contact Us</router-link> |
       <router-link to="/training">Training</router-link>
     </nav>

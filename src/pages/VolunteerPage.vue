@@ -59,7 +59,7 @@ Individuals aged 16-17 are welcome to volunteer with us. Junior members must hav
 </template>
 
 <script>
-import VolunteerApplication from "@/components/interactive/VolunteerApplication.vue";
+import VolunteerApplication from "@/components/subpages/VolunteerApplication.vue";
 
 export default {
   components: {

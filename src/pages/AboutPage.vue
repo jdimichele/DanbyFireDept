@@ -230,8 +230,8 @@
 </template>
 
 <script>
-import Carousel from "@/components/Carousel.vue";
-import CarouselSlide from "@/components/CarouselSlide.vue";
+import Carousel from "@/components/interactive/Carousel.vue";
+import CarouselSlide from "@/components/interactive/CarouselSlide.vue";
 export default {
   components: {
     Carousel,
