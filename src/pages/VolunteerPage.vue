@@ -1,5 +1,5 @@
 <template>
-  <div class="componentCard">
+  <div>
     <volunteer-application></volunteer-application>
   </div>
   <!--

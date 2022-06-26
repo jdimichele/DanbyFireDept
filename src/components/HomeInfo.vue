@@ -1,5 +1,5 @@
 <template>
-  <div class="componentCard">
+  <div>
     <!-- News/Blog page that will need more integration in the future. -->
     <h1 class="underline text-center p-2">{{ msg }}</h1>
     <p class="py-5">
@@ -8,7 +8,7 @@
       equipment. For the time being, we would like to direct your attention to
       two important sections of this website:
     </p>
-    <ui>
+    <ul class="list-disc">
       <li class="p-5">
         We are an all-volunteer fire company and are perpetually shorthanded for
         a variety of tasks, including both emergency response and non-emergency
@@ -24,7 +24,7 @@
         prevented from ever happening in the first place. Please see our <router-link to="/safety">Safety
         Information</router-link> page.
       </li>
-    </ui>
+    </ul>
   </div>
 </template>
 

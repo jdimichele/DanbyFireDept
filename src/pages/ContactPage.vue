@@ -1,5 +1,5 @@
 <template>
-  <div class="componentCard">
+  <div>
     <div class="font-bold underline text-5xl text-red-600 text-center">
       <h1>In An Emergency:</h1>
       <h1>CALL 9-1-1</h1>

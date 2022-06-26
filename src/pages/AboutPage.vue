@@ -1,5 +1,5 @@
 <template>
-  <div class="componentCard grid grid-cols-2 grid-row-1 gap-10 h-full">
+  <div class="grid grid-cols-2 grid-row-1 gap-10 h-full">
     <div class="relative col-span-1 row-span-1 top-5 h-full">
       <Carousel
         :navigation="true"

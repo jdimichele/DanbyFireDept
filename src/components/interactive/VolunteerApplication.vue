@@ -44,9 +44,8 @@
         />
       </div>
       <div class="pb-2 ml-10">
-        <label class="text-gray-700 text-sm" for="last-name">Last Name:</label>
+        <label for="last-name">Last Name:</label>
         <input
-          class="ml-3"
           type="text"
           id="last-name"
           name="last-name"
@@ -55,11 +54,7 @@
         />
       </div>
       <div class="pb-2">
-        <label
-          for="email-address"
-          class="block text-gray-700 text-sm ml-10 mb-5"
-          >Email:</label
-        >
+        <label for="email-address">Email:</label>
         <input
           type="email"
           id="email-address"
@@ -69,9 +64,7 @@
         />
       </div>
       <div class="pb-2">
-        <label for="phone" class="block text-gray-700 text-sm ml-10 mb-5"
-          >Phone:</label
-        >
+        <label for="phone">Phone:</label>
         <input
           type="tel"
           id="phone"
@@ -81,9 +74,7 @@
         />
       </div>
       <div>
-        <label for="position" class="block text-gray-700 text-sm ml-10 mb-5"
-          >Position:</label
-        >
+        <label for="position">Position:</label>
         <select id="position" name="position" v-model="position" required>
           <option value="" disabled selected>I'm applying for...</option>
           <option value="int-firefighter">Interior Firefighter</option>
@@ -96,11 +87,11 @@
         </select>
       </div>
 
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center pb-3">
         <button
           type="submit"
           value="Submit"
-          class="solid-border border-8 border-red-900"
+          class="btn btn-no-outline text-black bg-slate-500 hover:bg-danby-yellow"
         >
           Submit
         </button>

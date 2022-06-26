@@ -1,5 +1,5 @@
 <template>
-  <div class="componentCard">
+  <div>
     <h1 class="underline text-center py-3">Links</h1>
     <p>
       This page is a directory of other emergency services organizations. For
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import AllLinks from "@/components/AllLinks.vue";
+import AllLinks from "@/components/interactive/AllLinks.vue";
 
 export default {
   name: "AllLinksView",

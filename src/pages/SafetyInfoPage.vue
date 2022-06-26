@@ -1,5 +1,5 @@
 <template>
-  <div class="componentCard safety">
+  <div>
     <h3 class="text-center pt-3">
       We are perfectly glad to try to put ourselves out of work. Help us help
       you by preventing and preparing for emergencies:
