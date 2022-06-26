@@ -97,7 +97,7 @@
         </button>
       </div>
 
-      <p v-if="error">{{ error }}</p>
+      <p v-if="error" class=" text-red-600 text-center">{{ error }}</p>
     </div>
   </form>
 </template>
@@ -118,7 +118,7 @@ export default {
   methods: {
     submitApplication() {
       fetch(
-        "https://danby-fire-dept-default-rtdb.firebaseio.com/applications.json",
+        process.env.VUE_APP_DBFAEP,
         {
           method: "POST",
           headers: {

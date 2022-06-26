@@ -8,7 +8,7 @@
       equipment. For the time being, we would like to direct your attention to
       two important sections of this website:
     </p>
-    <ul class="list-disc">
+    <ul class="list-disc list-inside">
       <li class="p-5">
         We are an all-volunteer fire company and are perpetually shorthanded for
         a variety of tasks, including both emergency response and non-emergency
