@@ -33,16 +33,20 @@ const routes = [
   {
     path: "/volunteer",
     name: "volunteer",
-    component: VolunteerPage,
+    components: {
+      default: VolunteerPage,
+      volunteerRouter: VolunteerRoles,
+      VolunteerApplication,
+    },
     children: [
       {
-        path: "/roles",
+        path: ":id",
         name: "roles",
         component: VolunteerRoles,
       },
       {
-        path: "/apply",
-        name: "apply",
+        path: ":id",
+        name: "join",
         component: VolunteerApplication,
       },
     ],

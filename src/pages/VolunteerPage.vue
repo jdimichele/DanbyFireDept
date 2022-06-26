@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-view name="volunteerRouter"></router-view>
     <volunteer-application></volunteer-application>
   </div>
   <!--

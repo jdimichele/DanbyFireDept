@@ -13,7 +13,7 @@
         We are an all-volunteer fire company and are perpetually shorthanded for
         a variety of tasks, including both emergency response and non-emergency
         duties. If you may have the time and interest to volunteer, please see
-        our new <router-link to="/volunteer">Volunteer Information</router-link> page for more
+        our new <router-link to="/volunteer" class="underline hover:underline hover:text-blue-700">Volunteer Information</router-link> page for more
         details.
       </li>
       <li class="p-5">
@@ -21,7 +21,7 @@
         there instantaneously, and the greatest factor in a good outcome to an
         emergency is when the citizens who are on the scene when it happens know
         what to do and are prepared. It's even better when the emergency can be
-        prevented from ever happening in the first place. Please see our <router-link to="/safety">Safety
+        prevented from ever happening in the first place. Please see our <router-link to="/safety" class="underline hover:underline hover:text-blue-700">Safety
         Information</router-link> page.
       </li>
     </ul>
