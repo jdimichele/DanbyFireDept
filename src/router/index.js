@@ -33,23 +33,18 @@ const routes = [
   {
     path: "/volunteer",
     name: "volunteer",
-    components: {
-      default: VolunteerPage,
-      volunteerRouter: VolunteerRoles,
-      VolunteerApplication,
-    },
-    children: [
-      {
-        path: ":id",
-        name: "roles",
-        component: VolunteerRoles,
-      },
-      {
-        path: ":id",
-        name: "join",
-        component: VolunteerApplication,
-      },
-    ],
+    component: VolunteerPage,
+  },
+  // At some point, both of these SHOULD be stored as child routes, but for now, this is fine... I guess. :(
+  {
+    path: "/volunteer/roles",
+    name: "roles",
+    component: VolunteerRoles,
+  },
+  {
+    path: "/volunteer/join",
+    name: "join",
+    component: VolunteerApplication,
   },
   {
     path: "/links",

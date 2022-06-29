@@ -12,9 +12,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.mNavBar a.router-link-exact-active {
-  color: #cd9a3c;
-}
-</style>
