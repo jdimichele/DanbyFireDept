@@ -29,7 +29,7 @@
               />
             </svg>
           </router-link>
-          <div v-if="isOpen || volunteerHover">
+          <div v-if="isOpen || volunteerHover" class="absolute p-8 block backdrop-blur-2xl rounded-md">
             <span>
               <div
                 class="transition duration-300 ease-in-out transform hover:-translate-y-1"
