@@ -1,7 +1,7 @@
 <template>
   <div class="mNavBar text-danby-yellow font-bold text-center p-7">
     <div class="flex-none">
-      <div class="menu menu-horizontal p-0">
+      <div class="menu md:menu-horizontal p-0">
         <div class="px-1"><router-link to="/">Home</router-link></div>
         |
         <div class="px-1">
@@ -14,7 +14,6 @@
         |
         <div
           class="px-1"
-          @click="isOpen = !isOpen"
           @mouseover="volunteerHover = true"
           @mouseleave="volunteerHover = false"
         >
@@ -29,7 +28,7 @@
               />
             </svg>
           </router-link>
-          <div v-if="isOpen || volunteerHover" class="absolute p-8 block backdrop-blur-2xl rounded-md">
+          <div v-if="volunteerHover" class="absolute p-8 block backdrop-blur-3xl rounded-md">
             <span>
               <div
                 class="transition duration-300 ease-in-out transform hover:-translate-y-1"
@@ -73,7 +72,6 @@
 export default {
   data() {
     return {
-      isOpen: false,
       volunteerHover: false,
     };
   },

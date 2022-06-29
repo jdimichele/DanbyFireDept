@@ -10,7 +10,7 @@
           alt="Image of the Danby Volunteer Fire Company badge."
       /></router-link>
       <div class="titles">
-        <div class="text-4xl pl-5 md:order-2 order-2">
+        <div class="text-4xl pl-5 md:order-2 order-2 text-center">
           Danby Volunteer Fire Company
         </div>
         <div class="text-3xl text-center order-3 content-end p-3">
@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import NavBar from "../interactive/NavBar.vue";
+import NavBar from "./NavBar.vue";
 
 export default {
   components: {
