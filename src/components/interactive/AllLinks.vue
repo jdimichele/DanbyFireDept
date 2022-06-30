@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-2">
     <div>
-      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+      <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
         Tompkins County Fire Departments
       </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
@@ -18,7 +18,7 @@
     </div>
 
     <div>
-      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+      <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
         Other Fire Agencies
       </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
@@ -35,7 +35,7 @@
     </div>
 
     <div>
-      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+      <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
         Emergency Medical Services
       </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
@@ -55,7 +55,7 @@
     </div>
 
     <div>
-      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+      <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
         Law Enforcement Agencies
       </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
@@ -72,7 +72,7 @@
     </div>
 
     <div>
-      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+      <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
         Local Government
       </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">
@@ -89,7 +89,7 @@
     </div>
 
     <div>
-      <h2 class="flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+      <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
         Other Local Services
       </h2>
       <ul class="pb-10 ml-10 list-disc list-inside">

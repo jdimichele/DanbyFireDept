@@ -50,7 +50,7 @@
     </div>
 
     <div class="col-span-1">
-      <h1 class="underline">What We Do:</h1>
+      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">What We Do:</h1>
       <p class="indent-8 pt-2">
         Many people's image of firefighters comes from Hollywood, where paid,
         full-time firefighters staff an urban firehouse 24/7. Though this is
@@ -95,7 +95,7 @@
     </div>
 
     <div class="col-span-1">
-      <h1 class="underline">Services provided:</h1>
+      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">Services provided:</h1>
       <ul class="list-inside list-disc pt-2">
         <li>
           Emergency medical services (non-transporting first response service
@@ -162,7 +162,7 @@
     </div>
 
     <div class="col-span-2">
-      <h1 class="underline text-center">Who We Are</h1>
+      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">Who We Are</h1>
       <h1 class="underline text-center">2020 Officers:</h1>
       <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">

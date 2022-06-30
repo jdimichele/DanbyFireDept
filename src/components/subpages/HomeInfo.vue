@@ -1,15 +1,15 @@
 <template>
   <div>
     <!-- News/Blog page that will need more integration in the future. -->
-    <h1 class="underline text-center p-2">{{ msg }}</h1>
-    <div class="flex items-center justify-center">
+    <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red pt-6">{{ msg }}</h1>
+    <div class="flex justify-center items-center">
       <iframe
-        class="w-3/4 h-full"
+        class="w-3/4 h-full pt-2"
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDanbyVolunteerFireCompany%2F&tabs=timeline%2C%20events%2C&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
         style="border: none; overflow: hidden"
         scrolling="no"
         frameborder="0"
-        tabs="timeline, events"
+        tabs="timeline,events"
         allowfullscreen="true"
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
       ></iframe>

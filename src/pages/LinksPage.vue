@@ -4,7 +4,7 @@
     <p>
       This page is a directory of other emergency services organizations. For
       important public safety information to help protect your family, see our
-      <router-link to="/safety">Safety Information</router-link> page.
+      <router-link to="/safety" class="underline hover:underline hover:text-blue-700">Safety Information</router-link> page.
     </p>
     <br />
   <all-links />
