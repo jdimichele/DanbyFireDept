@@ -1,6 +1,10 @@
 <template>
-  <div class="grid grid-cols-2 grid-row-1 gap-10 h-full">
-    <div class="relative col-span-1 row-span-1 top-5 h-full">
+  <div
+    class="relative grid grid-cols-1 grid-rows-1 gap-2 min-w-min sm:grid-rows-1 sm:grid-cols-2 sm:gap-10 sm:h-full"
+  >
+    <div
+      class="row-span-1 col-span-6 order-1 pt-10 h-96 sm:relative sm:pt-0 sm:top-5 sm:order-2 sm:col-span-1 sm:grid-rows-1"
+    >
       <Carousel
         :navigation="true"
         :pagination="false"
@@ -22,7 +26,10 @@
         </CarouselSlide>
       </Carousel>
     </div>
-    <div class="col-span-1">
+
+    <div
+      class="col-span-6 order-1 row-span-2 sm:order-2 sm:col-span-1 sm:grid-rows-1 sm:row-span-1"
+    >
       <p class="indent-8 pt-5 pb-2">
         The <b>Danby Volunteer Fire Company</b> is a 100%-volunteer fire company
         protecting most of the town of
@@ -49,8 +56,12 @@
       </p>
     </div>
 
-    <div class="col-span-1">
-      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">What We Do:</h1>
+    <div
+      class="col-span-3 row-span-3 order-3 sm:col-span-1 sm:grid-rows-1 sm:row-span-1"
+    >
+      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        What We Do:
+      </h1>
       <p class="indent-8 pt-2">
         Many people's image of firefighters comes from Hollywood, where paid,
         full-time firefighters staff an urban firehouse 24/7. Though this is
@@ -94,8 +105,12 @@
       </p>
     </div>
 
-    <div class="col-span-1">
-      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">Services provided:</h1>
+    <div
+      class="col-span-4 row-span-4 order-4 sm:col-span-1 sm:grid-rows-1 sm:row-span-1"
+    >
+      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        Services provided:
+      </h1>
       <ul class="list-inside list-disc pt-2">
         <li>
           Emergency medical services (non-transporting first response service
@@ -161,8 +176,12 @@
       </ul>
     </div>
 
-    <div class="col-span-2">
-      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">Who We Are</h1>
+    <div
+      class="col-span-5 row-span-5 sm:col-span-2 sm:grid-rows-1 sm:row-span-1 order-5"
+    >
+      <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+        Who We Are
+      </h1>
       <h1 class="underline text-center">2020 Officers:</h1>
       <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -203,9 +222,9 @@
                   <tr class="border-b">
                     <th class="text-right pr-10">Lieutenant</th>
                     <td>Simon Wyatt</td>
-                                      
+
                     <th class="text-right pr-10">Treasurer</th>
-                    <td>Steve Hilsdorf</td>              
+                    <td>Steve Hilsdorf</td>
                   </tr>
 
                   <tr class="border-b">
