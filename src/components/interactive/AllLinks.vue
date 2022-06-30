@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2">
+  <div class="grid grid-cols-1 sm:grid-cols-2">
     <div>
       <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
         Tompkins County Fire Departments

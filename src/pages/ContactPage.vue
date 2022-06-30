@@ -31,7 +31,7 @@
           >
         </li>
         <iframe
-          class="w-96 h-96 border-0 ml-10"
+          class="flex w-80 h-96 border-0"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d737.0807780632854!2d-76.48332497976094!3d42.356952791620415!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeecec980c3cbe59f!2sDanby%20Fire%20Station!5e0!3m2!1sen!2sus!4v1648421720564!5m2!1sen!2sus"
           allowfullscreen="true"
           loading="lazy"
