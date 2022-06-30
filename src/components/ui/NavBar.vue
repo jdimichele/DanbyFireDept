@@ -30,7 +30,7 @@
           </router-link>
           <div
             v-if="volunteerHover"
-            class="absolute p-8 block backdrop-blur-3xl rounded-md"
+            class="absolute z-10 p-8 block backdrop-blur-3xl rounded-md"
           >
             <span>
               <div
@@ -135,7 +135,7 @@
           </router-link>
         </li>
         <li v-if="isOpen">
-          <span>
+          <div>
             <li class="uppercase p-4 ml-12">
               <router-link
                 to="/volunteer/roles"
@@ -150,7 +150,7 @@
                 >Join</router-link
               >
             </li>
-          </span>
+          </div>
         </li>
         <li class="uppercase p-4 ml-6">
           <router-link
@@ -185,7 +185,6 @@ export default {
       isOpen: false,
       volunteerHover: false,
       mobile: null,
-
       mobileNav: null,
       windowWidth: null,
     };
