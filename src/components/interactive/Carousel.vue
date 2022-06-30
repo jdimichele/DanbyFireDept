@@ -5,7 +5,7 @@
     <!-- Navigation for Carousel -->
     <div
       v-if="navEnabled"
-      class="navigate h-full w-full p-3 absolute flex items-center"
+      class="navigate w-full p-3 absolute flex items-center"
     >
       <div class="toggle-left flex-1">
         <i

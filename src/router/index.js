@@ -7,7 +7,7 @@ import VolunteerRoles from "../components/subpages/VolunteerRoles.vue";
 import VolunteerApplication from "../components/subpages/VolunteerApplication.vue";
 import LinksPage from "../pages/LinksPage.vue";
 import ContactPage from "../pages/ContactPage.vue";
-import TrainingPage from "../pages/TrainingPage.vue";
+import CalendarPage from "../pages/CalendarPage.vue";
 import NotFound from "../components/interactive/NotFound.vue";
 
 const routes = [
@@ -57,9 +57,9 @@ const routes = [
     component: ContactPage,
   },
   {
-    path: "/training",
-    name: "training",
-    component: TrainingPage,
+    path: "/calendar",
+    name: "calendar",
+    component: CalendarPage,
   },
   {
     path: "/:pathMatch(.*)*",

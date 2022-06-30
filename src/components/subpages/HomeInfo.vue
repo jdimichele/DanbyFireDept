@@ -7,21 +7,36 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 grid-rows-1 h-full">
       <div class="col-span-1 row-span-1 order-1">
         <!-- Example panel of blog posts -->
-        <h1 class="indent-6">Most Recent Blog Post</h1>
-        <p class="indent-8 pt-5 pb-2 px-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra
-          dapibus ipsum, id blandit dui. Aliquam condimentum efficitur
-          facilisis. Nam commodo ultricies lorem nec pulvinar. Nunc euismod
-          magna bibendum risus faucibus, id congue velit gravida. Pellentesque
-          odio neque, sollicitudin vel metus eu, interdum aliquam sapien.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia curae; Etiam dapibus iaculis metus, nec congue risus
-          sollicitudin non. Praesent vitae felis in augue pulvinar ultrices et
-          volutpat ipsum. Mauris pretium laoreet sem a molestie. Fusce a ante
-          sed nisi semper congue. Aenean nec leo diam. Donec nec feugiat tortor.
-          Ut nec neque elit. Mauris ac purus interdum, ultricies orci sit amet,
-          fringilla libero.
-        </p>
+        <div class="indent-8 pt-5 pb-2 px-5">
+          <ul class="list-disc list-inside">
+            <li class="p-5">
+              We are an all-volunteer fire company and are perpetually
+              shorthanded for a variety of tasks, including both emergency
+              response and non-emergency duties. If you may have the time and
+              interest to volunteer, please see our new
+              <router-link
+                to="/volunteer"
+                class="underline hover:underline hover:text-blue-700"
+                >Volunteer Information</router-link
+              >
+              page for more details.
+            </li>
+            <li class="p-5">
+              Although we do our best to respond promptly when called, we cannot
+              be there instantaneously, and the greatest factor in a good
+              outcome to an emergency is when the citizens who are on the scene
+              when it happens know what to do and are prepared. It's even better
+              when the emergency can be prevented from ever happening in the
+              first place. Please see our
+              <router-link
+                to="/safety"
+                class="underline hover:underline hover:text-blue-700"
+                >Safety Information</router-link
+              >
+              page.
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="col-span-1 row-span-1 order-2">
         <div class="flex justify-center items-center content-center">
@@ -40,33 +55,6 @@
         </div>
       </div>
     </div>
-    <ul class="list-disc list-inside">
-      <li class="p-5">
-        We are an all-volunteer fire company and are perpetually shorthanded for
-        a variety of tasks, including both emergency response and non-emergency
-        duties. If you may have the time and interest to volunteer, please see
-        our new
-        <router-link
-          to="/volunteer"
-          class="underline hover:underline hover:text-blue-700"
-          >Volunteer Information</router-link
-        >
-        page for more details.
-      </li>
-      <li class="p-5">
-        Although we do our best to respond promptly when called, we cannot be
-        there instantaneously, and the greatest factor in a good outcome to an
-        emergency is when the citizens who are on the scene when it happens know
-        what to do and are prepared. It's even better when the emergency can be
-        prevented from ever happening in the first place. Please see our
-        <router-link
-          to="/safety"
-          class="underline hover:underline hover:text-blue-700"
-          >Safety Information</router-link
-        >
-        page.
-      </li>
-    </ul>
   </div>
 </template>
 

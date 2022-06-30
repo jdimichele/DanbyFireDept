@@ -64,7 +64,7 @@
         </div>
         |
         <div class="px-1">
-          <router-link to="/training">Training</router-link>
+          <router-link to="/calendar">Calendar</router-link>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
   <div
     class="flex flex-row-reverse p-3 transition-all ease-in-out duration-500 w-11/12 m-auto max-w-6xl relative"
   >
-    <div class="flex top-0 h-full">
+    <div class="flex top-10 h-full">
       <i
         @click="toggleMobileNav"
         v-show="mobile"
@@ -168,9 +168,9 @@
         </li>
         <li class="uppercase p-4 ml-6">
           <router-link
-            to="/training"
+            to="/calendar"
             class="hover:text-danby-yellow text-sm transition-all duration-500 ease-in-out pb-1 bottom-1 border-solid border-transparent text-black"
-            >Training</router-link
+            >Calendar</router-link
           >
         </li>
       </ul>
