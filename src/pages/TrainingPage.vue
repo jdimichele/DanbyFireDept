@@ -1,15 +1,28 @@
 <template>
   <div>
     <h1 class="underline py-3 text-center">Training</h1>
-    <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">Calendar</h2>
-    <p class="pt-10">
-      This is the schedule of the Fire Company's upcoming meetings and
-      training. Unless otherwise specified, all meetings and training are held
-      at 7:00 PM at the Danby Fire Station at 1780 Danby Rd. Anyone interested
-      in volunteering is encouraged to drop in, introduce themselves, and
-      observe our training prior to submitting an application to our monthly
-      business meeting, which is held on the second Monday of each month. For
-      more information, see the Volunteer page.
+    <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
+      Calendar
+    </h2>
+    <p class="pt-10 indent-8">
+      This is the schedule of the Fire Company's upcoming meetings and training.
+      Unless otherwise specified, all meetings and training are held at 7:00 PM
+      at the
+      <a
+        href="https://goo.gl/maps/zTgiQ5hUkAfMYj617"
+        target="_blank"
+        class="hover:underline text-blue-700"
+        >Danby Fire Station at 1780 Danby Rd</a
+      >. Anyone interested in volunteering is encouraged to drop in, introduce
+      themselves, and observe our training prior to submitting an application to
+      our monthly business meeting, which is held on the second Monday of each
+      month. For more information, see the
+      <router-link
+        to="/volunteer"
+        class="underline hover:underline hover:text-blue-700"
+        >Volunteer</router-link
+      >
+      page.
     </p>
     <div class="p-6 flex justify-center items-center">
       <iframe

@@ -1,18 +1,44 @@
 <template>
   <div>
     <!-- News/Blog page that will need more integration in the future. -->
-    <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red pt-6">{{ msg }}</h1>
-    <div class="flex justify-center items-center">
-      <iframe
-        class="w-3/4 h-full pt-2"
-        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDanbyVolunteerFireCompany%2F&tabs=timeline%2C%20events%2C&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-        style="border: none; overflow: hidden"
-        scrolling="no"
-        frameborder="0"
-        tabs="timeline,events"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
+    <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red pt-6">
+      {{ msg }}
+    </h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 grid-rows-1 h-full">
+      <div class="col-span-1 row-span-1 order-1">
+        <!-- Example panel of blog posts -->
+        <h1 class="indent-6">Most Recent Blog Post</h1>
+        <p class="indent-8 pt-5 pb-2 px-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra
+          dapibus ipsum, id blandit dui. Aliquam condimentum efficitur
+          facilisis. Nam commodo ultricies lorem nec pulvinar. Nunc euismod
+          magna bibendum risus faucibus, id congue velit gravida. Pellentesque
+          odio neque, sollicitudin vel metus eu, interdum aliquam sapien.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Etiam dapibus iaculis metus, nec congue risus
+          sollicitudin non. Praesent vitae felis in augue pulvinar ultrices et
+          volutpat ipsum. Mauris pretium laoreet sem a molestie. Fusce a ante
+          sed nisi semper congue. Aenean nec leo diam. Donec nec feugiat tortor.
+          Ut nec neque elit. Mauris ac purus interdum, ultricies orci sit amet,
+          fringilla libero.
+        </p>
+      </div>
+      <div class="col-span-1 row-span-1 order-2">
+        <div class="flex justify-center items-center content-center">
+          <iframe
+            class="p-6"
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDanbyVolunteerFireCompany%2F&tabs=timeline%2C%20events%2C&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            style="border: none; overflow: hidden"
+            width="550"
+            height="500"
+            scrolling="no"
+            frameborder="0"
+            tabs="timeline,events"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
     </div>
     <ul class="list-disc list-inside">
       <li class="p-5">
