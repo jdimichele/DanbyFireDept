@@ -4,8 +4,9 @@
     <h1 class="underline text-center p-2">{{ msg }}</h1>
     <div class="flex items-center justify-center">
       <iframe
-        class="w-3/4 h-96"
+        class="w-3/4 h-full"
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDanbyVolunteerFireCompany%2F&tabs=timeline%2C%20events%2C&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        style="border: none; overflow: hidden"
         scrolling="no"
         frameborder="0"
         tabs="timeline, events"
