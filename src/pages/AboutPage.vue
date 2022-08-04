@@ -182,7 +182,7 @@
       <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
         Who We Are
       </h1>
-      <h1 class="underline text-center">2020 Officers:</h1>
+      <h1 class="underline text-center">{{ currentYear }} Officers:</h1>
       <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
@@ -259,6 +259,7 @@ export default {
   data() {
     return {
       carouselImages: ["Trucks", "truck401"],
+      currentYear: new Date().getFullYear(),
     };
   },
 };
