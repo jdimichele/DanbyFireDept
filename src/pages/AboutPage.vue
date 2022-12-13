@@ -258,7 +258,18 @@ export default {
   },
   data() {
     return {
-      carouselImages: ["Trucks", "truck401"],
+      carouselImages: [
+        "all_trucks",
+        "DSC_5444",
+        "DSC_5465",
+        "DSC_05499",
+        "DSC_5560",
+        "DSC_05569",
+        "DSC_5609",
+        "DSC_6096",
+        "DSC_6146",
+        "pancakes",
+      ],
       currentYear: new Date().getFullYear(),
     };
   },
