@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "../pages/HomePage.vue";
-import AboutPage from "../pages/AboutPage.vue";
-import SafetyInfoPage from "../pages/SafetyInfoPage.vue";
-import VolunteerPage from "../pages/VolunteerPage.vue";
-import VolunteerRoles from "../components/subpages/VolunteerRoles.vue";
-import VolunteerApplication from "../components/subpages/VolunteerApplication.vue";
-import LinksPage from "../pages/LinksPage.vue";
-import ContactPage from "../pages/ContactPage.vue";
-import CalendarPage from "../pages/CalendarPage.vue";
-import NotFound from "../components/interactive/NotFound.vue";
+const HomePage = () => import("../pages/HomePage.vue");
+const AboutPage = () => import("../pages/AboutPage.vue");
+const SafetyInfoPage = () => import("../pages/SafetyInfoPage.vue");
+const VolunteerPage = () => import("../pages/VolunteerPage.vue");
+const VolunteerRoles = () => import("../components/subpages/VolunteerRoles.vue");
+const VolunteerApplication = () => import("../components/subpages/VolunteerApplication.vue");
+const LinksPage = () => import("../pages/LinksPage.vue");
+const ContactPage = () => import("../pages/ContactPage.vue");
+const CalendarPage = () => import("../pages/CalendarPage.vue");
+const NotFound = () => import("../components/interactive/NotFound.vue");
 
 const routes = [
   {
