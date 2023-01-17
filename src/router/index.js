@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 const HomePage = () => import("../pages/HomePage.vue");
-const AboutPage = () => import("../pages/AboutPage.vue");
+import AboutPage from "../pages/AboutPage.vue";
 const SafetyInfoPage = () => import("../pages/SafetyInfoPage.vue");
 const VolunteerPage = () => import("../pages/VolunteerPage.vue");
-const VolunteerRoles = () => import("../components/subpages/VolunteerRoles.vue");
-const VolunteerApplication = () => import("../components/subpages/VolunteerApplication.vue");
+const VolunteerRoles = () =>
+  import("../components/subpages/VolunteerRoles.vue");
+const VolunteerApplication = () =>
+  import("../components/subpages/VolunteerApplication.vue");
 const LinksPage = () => import("../pages/LinksPage.vue");
 const ContactPage = () => import("../pages/ContactPage.vue");
 const CalendarPage = () => import("../pages/CalendarPage.vue");
@@ -35,7 +37,6 @@ const routes = [
     name: "volunteer",
     component: VolunteerPage,
   },
-  // At some point, both of these SHOULD be stored as child routes, but for now, this is fine... I guess. :(
   {
     path: "/volunteer/roles",
     name: "roles",

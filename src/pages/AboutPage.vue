@@ -208,7 +208,7 @@
                     <td>Dan Saracino</td>
 
                     <th class="text-right pr-10">Vice President</th>
-                    <td>Roger Grant</td>
+                    <td>Derek Dougherty</td>
                   </tr>
 
                   <tr class="border-b">
@@ -217,6 +217,11 @@
 
                     <th class="text-right pr-10">Secretary</th>
                     <td>Sharon Gaden</td>
+                  </tr>
+
+                  <tr class="border-b">
+                    <th class="text-right pr-10">3rd Assistant Chief</th>
+                    <td>Jethro Forbes</td>
                   </tr>
 
                   <tr class="border-b">
