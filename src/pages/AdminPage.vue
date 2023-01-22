@@ -1,14 +1,15 @@
 <template>
   <BaseLayoutCard>
+    <router-link to="/">
+      <img
+        class="sm:h-40"
+        :src="'../assets/danbybadge.png'"
+        alt="Image of the Danby Volunteer Fire Company badge."
+      />
+    </router-link>
     <div
       class="overflow-hidden flex h-1/2 justify-center self-center m-auto w-11/12"
     >
-      <router-link to="/"
-        ><img
-          class="sm:h-40"
-          :src="'../assets/danbybadge.png'"
-          alt="Image of the Danby Volunteer Fire Company badge."
-      /></router-link>
       <form
         class="flex relative px-10 py-0 flex-col items-center justify-center flex-1"
       >
@@ -75,7 +76,7 @@ export default {
         .auth()
         .signInWithEmailAndPassword(this.email, this.password)
         .then(() => {
-          this.$router.push("/admin/dashboard");
+          this.$router.push({ name: "AdminDash" });
           this.error = false;
           this.errorMsg = "";
           console.log(firebase.auth().currentUser.uid);

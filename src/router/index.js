@@ -17,8 +17,7 @@ const VolunteerRoles = () =>
 const VolunteerApplication = () =>
   import("../components/subpages/VolunteerApplication.vue");
 const NotFound = () => import("../components/interactive/NotFound.vue");
-const AdminDashboard = () =>
-  import("../components/subpages/AdminDashboard.vue");
+import AdminDashboard from "../components/subpages/AdminDashboard.vue";
 
 const routes = [
   {
@@ -123,18 +122,16 @@ const routes = [
       requiresAuth: false,
       requiresAdmin: false,
     },
-    children: [
-      {
-        path: "/dashboard",
-        name: "AdminDash",
-        component: AdminDashboard,
-        meta: {
-          title: "Dashboard",
-          requiresAuth: true,
-          requiresAdmin: true,
-        },
-      },
-    ],
+  },
+  {
+    path: "/dashboard",
+    name: "AdminDash",
+    component: AdminDashboard,
+    meta: {
+      title: "Dashboard",
+      requiresAuth: true,
+      requiresAdmin: true,
+    },
   },
 ];
 
