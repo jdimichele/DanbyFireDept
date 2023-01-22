@@ -8,6 +8,11 @@ node_modules
 .env.production
 .env.local
 .env.*.local
+firebase.js
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
 
 # Log files
 npm-debug.log*

@@ -11,6 +11,7 @@ const LinksPage = () => import("../pages/LinksPage.vue");
 const ContactPage = () => import("../pages/ContactPage.vue");
 const CalendarPage = () => import("../pages/CalendarPage.vue");
 const NotFound = () => import("../components/interactive/NotFound.vue");
+const AdminPage = () => import("../pages/AdminPage.vue");
 
 const routes = [
   {
@@ -66,6 +67,11 @@ const routes = [
     path: "/:pathMatch(.*)*",
     name: "not-found",
     component: NotFound,
+  },
+  {
+    path: "/admin",
+    name: "admin",
+    component: AdminPage,
   },
 ];
 
