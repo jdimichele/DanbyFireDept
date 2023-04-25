@@ -70,7 +70,7 @@
       </ul>
       <ul class="indent-10">
         <li><b>Requests for station use:</b></li>
-        <li class="indent-10">danbyfirestation@gmail.com</li>
+        <li class="indent-10">station@danbyfiredept.org</li>
       </ul>
     </div>
   </div>
