@@ -47,7 +47,17 @@
       </svg>
     </div>
     <div class="py-2 text-danby-yellow text-center">
-      <router-link :to="{ name: 'admin' }">© DVFC 2022</router-link>
+      <router-link :to="{ name: 'admin' }"
+        >© DVFC {{ currentYear }}
+      </router-link>
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return { currentYear: new Date().getFullYear() };
+  },
+};
+</script>
