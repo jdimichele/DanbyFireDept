@@ -103,13 +103,19 @@
         </li>
         <li class="m-8">
           You can find a link to our PayPal by scanning the QR code below or
-          click the PayPal icon at the bottom of the screen.
+          click
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=6VPGJH6FFYKNW&fbclid=IwAR1gMQXZOjXCURDdBpkVw5gX4dRQBNhlYNr6JmLpY6wlfOq83tWKK0E5zUw"
+            target="_blank"
+            class="text-blue-700 hover:underline hover:text-blue-700"
+            >here</a
+          >.
         </li>
       </ul>
       <div class="flex justify-center items-center">
         <img
           src="../assets/danbyQRCode.png"
-          alt="Image of the Danby Volunteer Fire Company badge."
+          alt="QR Code that takes you to the Danby PayPal donation link."
         />
       </div>
     </div>
