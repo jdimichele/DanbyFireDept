@@ -53,8 +53,8 @@
 import BaseLayoutCard from "@/components/ui/BaseLayoutCard.vue";
 import Email from "../assets/icons/envelope-regular.vue";
 import Password from "../assets/icons/lock-alt-solid.vue";
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
+import firebase from "firebase/app";
+import "firebase/auth";
 
 export default {
   components: {

@@ -1,6 +1,6 @@
 import { createStore } from "vuex";
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
+import firebase from "firebase/app";
+import "firebase/auth";
 import { db } from "../firebase.js";
 
 export default createStore({
@@ -14,9 +14,9 @@ export default createStore({
       profileId: null,
       profileInitials: null,
       profileAdmin: null,
+      blogs: [],
     };
   },
-  getters: {},
   mutations: {
     setProfileInfo(state, doc) {
       state.profileId = doc.id;
@@ -50,4 +50,5 @@ export default createStore({
       commit("setProfileAdmin", admin);
     },
   },
+  getters: {},
 });
