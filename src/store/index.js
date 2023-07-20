@@ -18,6 +18,7 @@ export default createStore({
       profileInitials: null,
       profileAdmin: null,
       blogPosts: [],
+      applications: [],
     };
   },
   mutations: {

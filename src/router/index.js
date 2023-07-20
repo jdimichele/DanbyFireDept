@@ -18,6 +18,7 @@ const VolunteerApplication = () =>
   import("../components/subpages/VolunteerApplication.vue");
 const NotFound = () => import("../components/interactive/NotFound.vue");
 import AdminDashboard from "../pages/AdminDashboard.vue";
+import AdminCreateBlog from "../components/subpages/admin/AdminCreateBlog.vue";
 
 const routes = [
   {
@@ -132,6 +133,12 @@ const routes = [
       requiresAuth: true,
       requiresAdmin: true,
     },
+  },
+  {
+    path: "/new-post",
+    name: "AdminNewPost",
+    component: AdminCreateBlog,
+    meta: { title: "AdminNewPost", requiresAuth: true, requiresAdmin: true },
   },
 ];
 
