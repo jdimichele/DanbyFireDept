@@ -6,7 +6,10 @@ import { db } from "../firebase.js";
 export default createStore({
   state() {
     return {
-      user: null,
+      user: {
+        loggedIn: false,
+        data: null,
+      },
       profileEmail: null,
       profileFirstName: null,
       profileLastName: null,
@@ -14,7 +17,7 @@ export default createStore({
       profileId: null,
       profileInitials: null,
       profileAdmin: null,
-      blogs: [],
+      blogPosts: [],
     };
   },
   mutations: {
@@ -30,8 +33,14 @@ export default createStore({
         state.profileFirstName.match(/(\b\S)?/g).join("") +
         state.profileLastName.match(/(\b\S)?/g).join("");
     },
+    setUser(state, payload) {
+      state.user = payload;
+    },
     updateUser(state, payload) {
       state.user = payload;
+    },
+    setLoggedIn(state, payload) {
+      state.user.loggedIn = payload;
     },
     setProfileAdmin(state, payload) {
       state.profileAdmin = payload;
@@ -50,5 +59,9 @@ export default createStore({
       commit("setProfileAdmin", admin);
     },
   },
-  getters: {},
+  getters: {
+    user(state) {
+      return state.user;
+    },
+  },
 });

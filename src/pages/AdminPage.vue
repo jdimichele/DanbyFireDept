@@ -1,5 +1,5 @@
 <template>
-  <BaseLayoutCard>
+  <div>
     <router-link to="/">
       <img
         class="sm:h-40"
@@ -46,11 +46,10 @@
         </div>
       </form>
     </div>
-  </BaseLayoutCard>
+  </div>
 </template>
 
 <script>
-import BaseLayoutCard from "@/components/ui/BaseLayoutCard.vue";
 import Email from "../assets/icons/envelope-regular.vue";
 import Password from "../assets/icons/lock-alt-solid.vue";
 import firebase from "firebase/app";
@@ -58,7 +57,6 @@ import "firebase/auth";
 
 export default {
   components: {
-    BaseLayoutCard,
     Email,
     Password,
   },

@@ -17,7 +17,7 @@ const VolunteerRoles = () =>
 const VolunteerApplication = () =>
   import("../components/subpages/VolunteerApplication.vue");
 const NotFound = () => import("../components/interactive/NotFound.vue");
-import AdminDashboard from "../components/subpages/AdminDashboard.vue";
+import AdminDashboard from "../pages/AdminDashboard.vue";
 
 const routes = [
   {
