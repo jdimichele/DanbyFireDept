@@ -179,43 +179,34 @@ export default {
   name: "volunteer-application",
   data() {
     return {
-      firstName: "",
-      lastName: "",
-      emailAddress: "",
-      phoneNumber: "",
+      firstName: null,
+      lastName: null,
+      emailAddress: null,
+      phoneNumber: null,
       position: null,
       error: null,
       confirmation: null,
     };
   },
   methods: {
-    submitApplication() {
-      fetch(process.env.VUE_APP_DBFAEP, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          firstname: this.firstName,
-          lastname: this.lastName,
-          email: this.emailAddress,
-          phone: this.phoneNumber,
-          pos: this.position,
-        }),
-      })
-        .then((response) => {
-          if (response.ok) {
-            console.log("Request sent successfully.");
-            this.confirmation = "Application sent successfully, thank you!";
-          } else {
-            throw new Error("Application could not be sent to the server.");
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-          this.error = error.message;
-        });
-
+    async submitApplication() {
+      try {
+        const applicationForm = {
+          firstName: this.firstName,
+          lastName: this.lastName,
+          emailAddress: this.emailAddress,
+          phoneNumber: this.phoneNumber,
+          position: this.position,
+        };
+        const response = await this.$store.dispatch(
+          "submitApplication",
+          applicationForm
+        );
+        this.confirmation = response;
+      } catch (error) {
+        console.log(error);
+        this.error = error.message;
+      }
       this.firstName = "";
       this.lastName = "";
       this.emailAddress = "";

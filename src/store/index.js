@@ -22,6 +22,9 @@ export default createStore({
     };
   },
   mutations: {
+    addApplication(state, payload) {
+      state.applications.push(payload);
+    },
     setProfileInfo(state, doc) {
       state.profileId = doc.id;
       state.profileEmail = doc.data().email;
@@ -58,6 +61,30 @@ export default createStore({
       const token = await user.getIdTokenResult();
       const admin = await token.claims.admin;
       commit("setProfileAdmin", admin);
+    },
+    async submitApplication(context, data) {
+      try {
+        const dataBase = await db.collection("applications").doc();
+        const timestamp = await Date.now();
+        const applicationData = {
+          appID: dataBase.id,
+          date: timestamp,
+          name: data.firstName + " " + data.lastName,
+          email: data.emailAddress,
+          phone: data.phoneNumber,
+          pos: data.position,
+        };
+
+        await dataBase.set(applicationData);
+
+        context.commit("addApplication", applicationData);
+
+        return "Application successfully sent, thank you!";
+      } catch (error) {
+        throw new Error(
+          "Application could not be sent to the server. Please try again later."
+        );
+      }
     },
   },
   getters: {
