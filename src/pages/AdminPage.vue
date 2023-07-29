@@ -77,7 +77,6 @@ export default {
           this.$router.push({ name: "AdminDash" });
           this.error = false;
           this.errorMsg = "";
-          console.log(firebase.auth().currentUser.uid);
         })
         .catch((err) => {
           this.error = true;
