@@ -19,6 +19,7 @@ export default createStore({
       profileAdmin: null,
       blogPosts: [],
       applications: [],
+      aboutPhotoBucket:[],
     };
   },
   mutations: {
@@ -86,10 +87,16 @@ export default createStore({
         );
       }
     },
+    async uploadNewPhotos(context, data){
+      const dataBase = await db. collection("");
+    }
   },
   getters: {
     user(state) {
       return state.user;
     },
+    getAboutPhotos(state){
+      return state.aboutPhotoBucket;
+    }
   },
 });

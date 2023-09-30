@@ -6,6 +6,6 @@
   <div>
     <router-link to="/new-post">Post New Blog</router-link>
   </div>
-  <div>Add New Photos to About Us Carousel</div>
+  <div>Upload New Photos</div>
   <div>Applications (1)</div>
 </template>
