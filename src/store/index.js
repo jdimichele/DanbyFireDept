@@ -19,12 +19,16 @@ export default createStore({
       profileAdmin: null,
       blogPosts: [],
       applications: [],
-      aboutPhotoBucket:[],
+      newApplicationNotifications: false,
+      aboutPhotoBucket: [],
     };
   },
   mutations: {
     addApplication(state, payload) {
       state.applications.push(payload);
+    },
+    setNewApplicationNotifications(state, value) {
+      state.newApplicationNotifications = value;
     },
     setProfileInfo(state, doc) {
       state.profileId = doc.id;
@@ -63,6 +67,7 @@ export default createStore({
       const admin = await token.claims.admin;
       commit("setProfileAdmin", admin);
     },
+
     async submitApplication(context, data) {
       try {
         const dataBase = await db.collection("applications").doc();
@@ -87,16 +92,42 @@ export default createStore({
         );
       }
     },
-    async uploadNewPhotos(context, data){
-      const dataBase = await db. collection("");
-    }
+
+    async checkForApplications({ commit, state }) {
+      const applicationCollection = db.collection("applications");
+
+      applicationCollection.onSnapshot((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const newApplication = doc.data();
+          commit("addApplication", newApplication);
+
+          if (
+            !state.applications.some(
+              (app) => app.appID === newApplication.appID
+            )
+          ) {
+            commit("setNewApplicationNotifications", true);
+          }
+        });
+      });
+    },
+
+    markNotificationsAsViewed({ commit }) {
+      commit("setHasNewApplications", false);
+    },
+    // async uploadNewPhotos(context, data){
+    //   const dataBase = await db. collection("");
+    // }
   },
   getters: {
     user(state) {
       return state.user;
     },
-    getAboutPhotos(state){
+    getAboutPhotos(state) {
       return state.aboutPhotoBucket;
-    }
+    },
+    getNewApplications(state) {
+      return state.newApplications;
+    },
   },
 });
