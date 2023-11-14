@@ -10,8 +10,7 @@
 import BaseLayoutCard from "./components/ui/BaseLayoutCard.vue";
 import BaseHeader from "./components/ui/BaseHeader.vue";
 import BaseFooter from "./components/ui/BaseFooter.vue";
-// import firebase from "firebase/app";
-// import "firebase/auth";
+
 export default {
   components: {
     BaseLayoutCard,

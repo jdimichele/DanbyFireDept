@@ -1,7 +1,7 @@
 <template>
   <div class="mNavBar text-danby-yellow font-bold text-center p-7">
     <div class="flex-none">
-      <div v-show="!mobile" class="menu md:menu-horizontal p-0">
+      <div v-show="!mobile" class="md:menu-horizontal p-0">
         <div class="px-1"><router-link to="/">Home</router-link></div>
         |
         <div class="px-1">

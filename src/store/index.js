@@ -20,12 +20,19 @@ export default createStore({
       blogPosts: [],
       applications: [],
       newApplicationNotifications: false,
+      lastCheckedTimestamp: null,
       aboutPhotoBucket: [],
     };
   },
   mutations: {
     addApplication(state, payload) {
       state.applications.push(payload);
+    },
+    clearApplications(state) {
+      state.applications = [];
+    },
+    updateLastCheckedTimestamp(state, timestamp) {
+      state.lastCheckedTimestamp = timestamp;
     },
     setNewApplicationNotifications(state, value) {
       state.newApplicationNotifications = value;
@@ -70,8 +77,8 @@ export default createStore({
 
     async submitApplication(context, data) {
       try {
-        const dataBase = await db.collection("applications").doc();
-        const timestamp = await Date.now();
+        const dataBase = db.collection("applications").doc();
+        const timestamp = firebase.firestore.FieldValue.serverTimestamp();
         const applicationData = {
           appID: dataBase.id,
           date: timestamp,
@@ -92,32 +99,36 @@ export default createStore({
         );
       }
     },
-
     async checkForApplications({ commit, state }) {
-      const applicationCollection = db.collection("applications");
+      try {
+        const applicationCollection = db.collection("applications");
+        const querySnapshot = await applicationCollection
+          .orderBy("date", "desc")
+          .get();
+        if (!querySnapshot.empty) {
+          const latestApp = querySnapshot.docs[0].data();
+          const latestRecordTimestamp = latestApp.date;
+          if (latestRecordTimestamp > state.lastCheckedTimestamp) {
+            commit("updateLastCheckedTimestamp", latestRecordTimestamp);
 
-      applicationCollection.onSnapshot((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          const newApplication = doc.data();
-          commit("addApplication", newApplication);
-
-          if (
-            !state.applications.some(
-              (app) => app.appID === newApplication.appID
-            )
-          ) {
             commit("setNewApplicationNotifications", true);
+          } else {
+            commit("setNewApplicationNotifications", false);
           }
-        });
-      });
-    },
-
-    markNotificationsAsViewed({ commit }) {
-      commit("setHasNewApplications", false);
+        } else {
+          commit("setNewApplicationNotifications", false);
+        }
+      } catch (error) {
+        console.error("Error checking for new records:", error);
+      }
     },
     // async uploadNewPhotos(context, data){
     //   const dataBase = await db. collection("");
     // }
+
+    async markNotificationsAsViewed({ commit }) {
+      commit("setNewApplicationNotifications", false);
+    },
   },
   getters: {
     user(state) {
@@ -125,9 +136,6 @@ export default createStore({
     },
     getAboutPhotos(state) {
       return state.aboutPhotoBucket;
-    },
-    getNewApplications(state) {
-      return state.newApplications;
     },
   },
 });

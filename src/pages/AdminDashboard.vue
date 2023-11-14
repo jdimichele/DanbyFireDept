@@ -11,8 +11,8 @@
     <div class="indicator">
       <span
         class="indicator-item badge bg-danby-red"
-        v-if="newApplicationsNotification"
-        >{{ newApplicationCount }}</span
+        v-show="newAppNotification"
+        ><h2 class="text-white font-bold">!</h2></span
       >
       <button @click="viewApplications">Applications</button>
     </div>
@@ -22,10 +22,7 @@
 <script>
 export default {
   computed: {
-    newApplicationCount() {
-      return this.$store.getters.getNewApplications.length;
-    },
-    newApplicationsNotification() {
+    newAppNotification() {
       return this.$store.state.newApplicationNotifications;
     },
   },
@@ -34,9 +31,12 @@ export default {
       this.$store.dispatch("markNotificationsAsViewed");
       this.$router.push("");
     },
+    async checkForNewApplications() {
+      await this.$store.dispatch("checkForApplications");
+    },
   },
   created() {
-    this.$store.dispatch("checkForApplications");
+    this.checkForNewApplications();
   },
 };
 </script>
