@@ -29,7 +29,7 @@ export default {
   methods: {
     viewApplications() {
       this.$store.dispatch("markNotificationsAsViewed");
-      this.$router.push("");
+      this.$router.push(" ");
     },
     async checkForNewApplications() {
       await this.$store.dispatch("checkForApplications");
