@@ -11,7 +11,7 @@
     <div class="indicator">
       <span
         class="indicator-item badge bg-danby-red"
-        v-show="newAppNotification"
+        v-if="newAppNotification"
         ><h2 class="text-white font-bold">!</h2></span
       >
       <button @click="viewApplications">Applications</button>
@@ -29,7 +29,7 @@ export default {
   methods: {
     viewApplications() {
       this.$store.dispatch("markNotificationsAsViewed");
-      this.$router.push(" ");
+      this.$router.push("");
     },
     async checkForNewApplications() {
       await this.$store.dispatch("checkForApplications");

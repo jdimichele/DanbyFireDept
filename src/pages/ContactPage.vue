@@ -51,6 +51,8 @@
           </li>
         </ul>
         <ul class="indent-10">
+          <li><b>Contact Email:</b></li>
+          <li class="indent-10">info@danbyfiredept.org</li>
           <li><b>Requests for station use:</b></li>
           <li class="indent-10">station@danbyfiredept.org</li>
         </ul>

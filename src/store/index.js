@@ -99,6 +99,9 @@ export default createStore({
         );
       }
     },
+
+    async sendApplicationEmail(){},
+
     async checkForApplications({ commit, state }) {
       try {
         const applicationCollection = db.collection("applications");
