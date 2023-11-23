@@ -16,6 +16,8 @@ const VolunteerRoles = () =>
   import("../components/subpages/VolunteerRoles.vue");
 const VolunteerApplication = () =>
   import("../components/subpages/VolunteerApplication.vue");
+const SafetyHouseSign = () =>
+  import("../components/subpages/SafetyHouseSign.vue");
 const NotFound = () => import("../components/interactive/NotFound.vue");
 import AdminDashboard from "../pages/AdminDashboard.vue";
 import AdminCreateBlog from "../components/subpages/admin/AdminCreateBlog.vue";
@@ -49,6 +51,15 @@ const routes = [
     component: SafetyInfoPage,
     meta: {
       title: "Safety Info",
+      requiresAuth: false,
+    },
+  },
+  {
+    path: "/safety/housesign",
+    name: "housesign",
+    component: SafetyHouseSign,
+    meta: {
+      title: "House Sign",
       requiresAuth: false,
     },
   },

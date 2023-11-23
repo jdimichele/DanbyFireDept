@@ -8,8 +8,37 @@
           <router-link to="/about">About Us</router-link>
         </div>
         |
-        <div class="px-1">
-          <router-link to="/safety">Safety Information</router-link>
+        <div
+          class="px-1"
+          @mouseover="safetyHover = true"
+          @mouseleave="safetyHover = false"
+        >
+          <router-link to="/safety" class="flex items-center justify-center"
+            >Safety Information
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current w-5 h-5"
+            >
+              <path
+                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              /></svg
+          ></router-link>
+          <div
+            v-if="safetyHover"
+            class="absolute z-10 px-12 py-6 block backdrop-blur-3xl rounded-md"
+          >
+            <span>
+              <div
+                class="transition duration-300 ease-in-out transform hover:-translate-y-1"
+              >
+                <router-link
+                  to="/safety/housesign"
+                  class="hover:text-danby-yellow"
+                  >House Sign</router-link
+                >
+              </div>
+            </span>
+          </div>
         </div>
         |
         <div
@@ -30,7 +59,7 @@
           </router-link>
           <div
             v-if="volunteerHover"
-            class="absolute z-10 p-8 block backdrop-blur-3xl rounded-md"
+            class="absolute z-10 px-8 py-4 block backdrop-blur-3xl rounded-md"
           >
             <span>
               <div
@@ -184,6 +213,7 @@ export default {
     return {
       isOpen: false,
       volunteerHover: false,
+      safetyHover: false,
       mobile: null,
       mobileNav: null,
       windowWidth: null,
@@ -216,4 +246,3 @@ export default {
   },
 };
 </script>
-
