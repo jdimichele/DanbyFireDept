@@ -66,7 +66,7 @@
         >© DVFC {{ currentYear }}
       </router-link>
       <p class="text-sm">
-        Danby Fire Volunteer Company is a non-profit organization.
+        Danby Volunteer Fire Company is a non-profit organization.
       </p>
     </div>
   </footer>
