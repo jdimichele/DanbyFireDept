@@ -2,10 +2,12 @@
 node_modules
 /dist
 src/firebase.js
-src/firebase.json
-src/firestore.indexes.json
-src/firestore.rules
-src/storage.rules
+firebase.json
+firestore.indexes.json
+firestore.rules
+storage.rules
+.firebaserc
+functions/
 
 
 # local env files
