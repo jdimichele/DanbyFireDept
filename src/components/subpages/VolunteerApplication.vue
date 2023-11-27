@@ -204,7 +204,6 @@ export default {
         );
         this.confirmation = response;
       } catch (error) {
-        console.log(error);
         this.error = error.message;
       }
       this.firstName = "";

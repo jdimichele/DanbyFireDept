@@ -245,5 +245,42 @@ export default {
       paymentOption: null,
     };
   },
+
+  methods: {
+    async submitSignRequest() {
+      try {
+        const requestForm = {
+          firstName: this.firstName,
+          lastName: this.lastName,
+          emailAddress: this.emailAddress,
+          phoneNumber: this.phoneNumber,
+          homeAddress: this.homeAddress,
+          signDirection: this.signDirection,
+          numberOfSigns: this.numberOfSigns,
+          numberOfPosts: this.numberOfPosts,
+          mounting: this.mounting,
+          paymentOption: this.paymentOption,
+        };
+        const response = await this.$store.dispatch(
+          "submitSignRequest",
+          requestForm
+        );
+        this.confirmation = response;
+      } catch (error) {
+        console.log(error);
+        this.error = error.message;
+      }
+      this.firstName = "";
+      this.lastName = "";
+      this.emailAddress = "";
+      this.phoneNumber = "";
+      this.homeAddress = "";
+      this.signDirection = null;
+      this.numberOfSigns = null;
+      this.numberOfPosts = null;
+      this.mounting = null;
+      this.paymentOption = null;
+    },
+  },
 };
 </script>
