@@ -100,6 +100,8 @@ export default createStore({
       }
     },
 
+    async submitSignRequest(){},
+
     async checkForApplications({ commit, state }) {
       try {
         const applicationCollection = db.collection("applications");

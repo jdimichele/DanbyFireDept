@@ -132,30 +132,38 @@
           <!-- Sign Direction radio buttons -->
           <div class="sm:flex pb-2 ml-10">
             <div>
-              <label class="text-base"> Choose sign direction: </label>
+              <label class="text-base">Choose sign direction: </label>
               <div class="flex">
-                <div class="">
-                  <input
-                    class="input input-sm"
-                    type="radio"
-                    id="sign-direction"
-                    name="sign-direction"
-                    value="horizontal"
-                    v-model="signDirection"
-                    required
-                  />
-                  <label for="horizontal" class="text-base">Horizontal</label>
+                <div class="inline-flex">
+                  <div class="pr-5">
+                    <input
+                      class="align-middle"
+                      type="radio"
+                      id="sign-direction"
+                      name="sign-direction"
+                      value="horizontal"
+                      v-model="signDirection"
+                      required
+                    />
+                    <label for="horizontal" class="text-base align-middle pl-1"
+                      >Horizontal</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      class="align-middle"
+                      type="radio"
+                      id="sign-direction"
+                      name="sign-direction"
+                      value="vertical"
+                      v-model="signDirection"
+                      required
+                    />
+                    <label for="vertical" class="text-base align-middle pl-1"
+                      >Vertical</label
+                    >
+                  </div>
                 </div>
-                <input
-                  class="input input-sm input-bordered"
-                  type="radio"
-                  id="sign-direction"
-                  name="sign-direction"
-                  value="vertical"
-                  v-model="signDirection"
-                  required
-                />
-                <label for="vertical" class="text-base">Vertical</label>
               </div>
             </div>
           </div>
@@ -207,7 +215,7 @@
           <div class="sm:flex pb-2 ml-10">
             <div>
               <p class="text-base">
-                At your request, the Fire Company would be glad to assist you in
+                Danby Fire Company would be glad to assist you in
                 mounting the sign. Do you require assistance?
               </p>
             </div>
