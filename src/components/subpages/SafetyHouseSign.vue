@@ -193,17 +193,16 @@
             </div>
           </div>
           <div v-if="signNeeded === 'true'">
-            <div class="sm:flex pb-2 ml-10">
-              <div class="sm:w-28">
+            <div class="sm:flex pb-2 pl-2 ml-10">
+              <div class="inline-flex">
                 <label for="number-of-signs" class="text-base"
                   >Number of Signs Needed:</label
                 >
                 <select
-                  class="select select-sm input-bordered text-xl"
+                  class="select select-sm input-bordered text-xl ml-2"
                   id="number-of-signs"
                   name="number-of-signs"
                   v-model="numberOfSigns"
-                  required
                 >
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -215,25 +214,46 @@
           </div>
 
           <!-- Number of Posts selection -->
-          <div>
-            <div class="sm:flex pb-2 ml-10">
-              <div class="sm:w-28">
-                <label for="number-of-posts" class="text-base"
-                  >Number of Posts Needed:</label
-                >
-                <select
-                  class="select select-sm input-bordered text-xl"
-                  id="number-of-posts"
-                  name="number-of-posts"
-                  v-model="numberOfPosts"
-                  required
-                >
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
+          <div class="sm:flex pb-2 ml-10">
+            <p class="text-base">Do you need more than one sign post?</p>
+            <div class="inline-flex pl-2">
+              <label for="postNeeded" class="text-base pr-1">Yes</label>
+              <input
+                class="align-middle"
+                type="radio"
+                name="postNeeded"
+                id="postNeeded"
+                v-model="postNeeded"
+                value="true"
+              />
+              <label for="postNeeded" class="text-base px-1">No</label>
+              <input
+                class="align-middle"
+                type="radio"
+                name="postNeeded"
+                id="postNeeded"
+                v-model="postNeeded"
+                value="false"
+              />
+            </div>
+            <div v-if="postNeeded === 'true'">
+              <div class="sm:flex pb-2 ml-10">
+                <div class="sm:w-28">
+                  <label for="number-of-posts" class="text-base"
+                    >Number of Posts Needed:</label
+                  >
+                  <select
+                    class="select select-sm input-bordered text-xl"
+                    id="number-of-posts"
+                    name="number-of-posts"
+                    v-model="numberOfPosts"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
