@@ -19,6 +19,7 @@ export default createStore({
       profileAdmin: null,
       blogPosts: [],
       applications: [],
+      signRequests: [],
       newApplicationNotifications: false,
       lastCheckedTimestamp: null,
       aboutPhotoBucket: [],
@@ -27,6 +28,9 @@ export default createStore({
   mutations: {
     addApplication(state, payload) {
       state.applications.push(payload);
+    },
+    addSignRequest(state, payload) {
+      state.signRequests.push(payload);
     },
     clearApplications(state) {
       state.applications = [];
@@ -100,7 +104,36 @@ export default createStore({
       }
     },
 
-    async submitSignRequest(){},
+    async submitSignRequest(context, data) {
+      try {
+        const dataBase = db.collection("house-signs").doc();
+        const timestamp = firebase.firestore.FieldValue.serverTimestamp();
+        const requestData = {
+          appID: dataBase.id,
+          data: timestamp,
+          name: data.firstName + " " + data.lastName,
+          email: data.emailAddress,
+          phone: data.phoneNumber,
+          address: data.homeAddress,
+          direction: data.signDirection,
+          numSigns: data.numberOfSigns,
+          numPosts: data.numberOfPosts,
+          mounting: data.mounting,
+          paymentOption: data.paymentOption,
+        };
+        console.log(requestData);
+
+        await dataBase.set(requestData);
+
+        context.commit("addSignRequest", requestData);
+
+        return "House Sign Request submitted. A representative from DVFC will reach out to you soon.";
+      } catch (error) {
+        throw new Error(
+          "Sign request could not be sent to the server. Please try again later."
+        );
+      }
+    },
 
     async checkForApplications({ commit, state }) {
       try {
