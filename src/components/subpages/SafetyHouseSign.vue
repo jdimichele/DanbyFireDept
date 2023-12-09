@@ -170,44 +170,71 @@
 
           <!-- Number of Signs selection -->
           <div class="sm:flex pb-2 ml-10">
-            <div class="sm:w-28">
-              <label for="number-of-signs" class="text-base"
-                >Number of Signs Needed:</label
-              >
-              <select
-                class="select select-sm input-bordered text-xl"
-                id="number-of-signs"
-                name="number-of-signs"
-                v-model="numberOfSigns"
-                required
-              >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
+            <p class="text-base">Do you need more than one sign?</p>
+            <div class="inline-flex pl-2">
+              <label for="signNeeded" class="text-base pr-1">Yes</label>
+              <input
+                class="align-middle"
+                type="radio"
+                name="signNeeded"
+                id="signNeeded"
+                v-model="signNeeded"
+                value="true"
+              />
+              <label for="signNeeded" class="text-base px-1">No</label>
+              <input
+                class="align-middle"
+                type="radio"
+                name="signNeeded"
+                id="signNeeded"
+                v-model="signNeeded"
+                value="false"
+              />
+            </div>
+          </div>
+          <div v-if="signNeeded === 'true'">
+            <div class="sm:flex pb-2 ml-10">
+              <div class="sm:w-28">
+                <label for="number-of-signs" class="text-base"
+                  >Number of Signs Needed:</label
+                >
+                <select
+                  class="select select-sm input-bordered text-xl"
+                  id="number-of-signs"
+                  name="number-of-signs"
+                  v-model="numberOfSigns"
+                  required
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
             </div>
           </div>
 
           <!-- Number of Posts selection -->
-          <div class="sm:flex pb-2 ml-10">
-            <div class="sm:w-28">
-              <label for="number-of-posts" class="text-base"
-                >Number of Posts Needed:</label
-              >
-              <select
-                class="select select-sm input-bordered text-xl"
-                id="number-of-posts"
-                name="number-of-posts"
-                v-model="numberOfPosts"
-                required
-              >
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
+          <div>
+            <div class="sm:flex pb-2 ml-10">
+              <div class="sm:w-28">
+                <label for="number-of-posts" class="text-base"
+                  >Number of Posts Needed:</label
+                >
+                <select
+                  class="select select-sm input-bordered text-xl"
+                  id="number-of-posts"
+                  name="number-of-posts"
+                  v-model="numberOfPosts"
+                  required
+                >
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
             </div>
           </div>
 
@@ -215,8 +242,8 @@
           <div class="sm:flex pb-2 ml-10">
             <div>
               <p class="text-base">
-                Danby Fire Company would be glad to assist you in
-                mounting the sign. Do you require assistance?
+                Danby Fire Company would be glad to assist you in mounting the
+                sign. Do you require assistance?
               </p>
             </div>
             <div class="">
@@ -293,6 +320,8 @@
 export default {
   data() {
     return {
+      signNeeded: "",
+      postNeeded: "",
       firstName: null,
       lastName: null,
       emailAddress: null,
