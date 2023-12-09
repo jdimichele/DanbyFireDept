@@ -132,7 +132,7 @@
           <!-- Sign Direction radio buttons -->
           <div class="sm:flex pb-2 ml-10">
             <div>
-              <label class="text-base">Choose sign direction: </label>
+              <label class="text-base">Choose sign direction:</label>
               <div class="flex">
                 <div class="inline-flex">
                   <div class="pr-5">
@@ -236,24 +236,24 @@
                 value="false"
               />
             </div>
-            <div v-if="postNeeded === 'true'">
-              <div class="sm:flex pb-2 ml-10">
-                <div class="sm:w-28">
-                  <label for="number-of-posts" class="text-base"
-                    >Number of Posts Needed:</label
-                  >
-                  <select
-                    class="select select-sm input-bordered text-xl"
-                    id="number-of-posts"
-                    name="number-of-posts"
-                    v-model="numberOfPosts"
-                  >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-                </div>
+          </div>
+          <div v-if="postNeeded === 'true'">
+            <div class="sm:flex pb-2 pl-2 ml-10">
+              <div class="inline-flex">
+                <label for="number-of-signs" class="text-base"
+                  >Number of Posts Needed:</label
+                >
+                <select
+                  class="select select-sm input-bordered text-xl ml-2"
+                  id="number-of-posts"
+                  name="number-of-posts"
+                  v-model="numberOfPosts"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
               </div>
             </div>
           </div>
@@ -261,34 +261,42 @@
           <!-- Mounting radio buttons -->
           <div class="sm:flex pb-2 ml-10">
             <div>
-              <p class="text-base">
+              <h3 class="text-base">
                 Danby Fire Company would be glad to assist you in mounting the
                 sign. Do you require assistance?
-              </p>
-            </div>
-            <div class="">
-              <input
-                class="input input-sm input-bordered"
-                type="radio"
-                id="mounting"
-                name="mounting"
-                value="yes"
-                v-model="mounting"
-                required
-              />
-              <label for="yes" class="text-base">Yes</label>
-            </div>
-            <div class="">
-              <input
-                class="input input-sm input-bordered"
-                type="radio"
-                id="mounting"
-                name="mounting"
-                value="no"
-                v-model="mounting"
-                required
-              />
-              <label for="no" class="text-base">No</label>
+              </h3>
+              <div class="flex">
+                <div class="inline-flex">
+                  <div class="pr-5">
+                    <input
+                      class="align-middle"
+                      type="radio"
+                      id="mounting"
+                      name="mounting"
+                      value="yes"
+                      v-model="mounting"
+                      required
+                    />
+                    <label for="yes" class="text-base align-middle pl-1"
+                      >Yes</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      class="align-middle"
+                      type="radio"
+                      id="mounting"
+                      name="mounting"
+                      value="no"
+                      v-model="mounting"
+                      required
+                    />
+                    <label for="no" class="text-base align-middle pl-1"
+                      >No</label
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
