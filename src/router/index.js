@@ -16,11 +16,11 @@ const VolunteerRoles = () =>
   import("../components/subpages/VolunteerRoles.vue");
 const VolunteerApplication = () =>
   import("../components/subpages/VolunteerApplication.vue");
-const SafetyHouseSign = () =>
-  import("../components/subpages/SafetyHouseSign.vue");
+const HouseSignForm = () => import("../components/subpages/HouseSignForm.vue");
+const HouseSignInfo = () => import("../components/subpages/HouseSignInfo.vue");
 const NotFound = () => import("../components/interactive/NotFound.vue");
-import AdminDashboard from "../pages/AdminDashboard.vue";
-import AdminCreateBlog from "../components/subpages/admin/AdminCreateBlog.vue";
+const AdminDashboard = () => import("../pages/AdminDashboard.vue");
+const AdminCreateBlog = () => import("../components/subpages/admin/AdminCreateBlog.vue");
 
 const routes = [
   {
@@ -55,11 +55,20 @@ const routes = [
     },
   },
   {
-    path: "/safety/housesign",
-    name: "housesign",
-    component: SafetyHouseSign,
+    path: "/safety/house-sign",
+    name: "house-sign",
+    component: HouseSignForm,
     meta: {
       title: "House Sign",
+      requiresAuth: false,
+    },
+  },
+  {
+    path: "/safety/house-info",
+    name: "house-info",
+    component: HouseSignInfo,
+    meta: {
+      title: "House Sign Info",
       requiresAuth: false,
     },
   },
