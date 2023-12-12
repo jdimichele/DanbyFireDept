@@ -32,9 +32,20 @@
                 class="transition duration-300 ease-in-out transform hover:-translate-y-1"
               >
                 <router-link
-                  to="/safety/housesign"
-                  class="hover:text-danby-yellow"
-                  >House Sign</router-link
+                  to="/safety/house-info"
+                  class="hover:text-danby-yellow text-lg"
+                  >House Sign Info</router-link
+                >
+              </div>
+            </span>
+            <span>
+              <div
+                class="transition duration-300 ease-in-out transform hover:-translate-y-1"
+              >
+                <router-link
+                  to="/safety/house-sign-form"
+                  class="hover:text-danby-yellow text-lg"
+                  >House Sign Order Form</router-link
                 >
               </div>
             </span>
@@ -67,7 +78,7 @@
               >
                 <router-link
                   to="/volunteer/roles"
-                  class="hover:text-danby-yellow"
+                  class="hover:text-danby-yellow text-lg"
                   >Roles</router-link
                 >
               </div>
@@ -76,7 +87,7 @@
               >
                 <router-link
                   to="/volunteer/join"
-                  class="hover:text-danby-yellow"
+                  class="hover:text-danby-yellow text-lg"
                   >Join</router-link
                 >
               </div>

@@ -55,7 +55,7 @@ const routes = [
     },
   },
   {
-    path: "/safety/house-sign",
+    path: "/safety/house-sign-form",
     name: "house-sign",
     component: HouseSignForm,
     meta: {
