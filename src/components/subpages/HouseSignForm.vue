@@ -2,9 +2,11 @@
   <div class="grid grid-cols-2 grid-rows-1">
     <div class="col-span-2">
       <div class="py-2">
-        <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
-          House Numbering Sign for Emergency Services Ordering Form
-        </h2>
+        <div class="pt-5 flex-grow border-b-2 border-danby-red">
+          <h1 class="font-bold text-center">
+            House Numbering Sign for Emergency Services Info
+          </h1>
+        </div>
         <h4 class="font-bold flex-grow text-center py-6">
           If we can't find you, we can't help you!
         </h4>

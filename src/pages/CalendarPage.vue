@@ -1,9 +1,8 @@
 <template>
   <div>
-    <h1 class="underline py-3 text-center">Calendar</h1>
-    <!-- <h2 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">
-      Calendar
-    </h2> -->
+    <div class="pt-5 flex-grow border-b-2 border-danby-red">
+      <h1 class="font-bold text-center">Calendar</h1>
+    </div>
     <p class="pt-10 indent-8">
       This is the schedule of the Fire Company's upcoming meetings and training.
       Unless otherwise specified, all meetings and training are held at 7:00 PM

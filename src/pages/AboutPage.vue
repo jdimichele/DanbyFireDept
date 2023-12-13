@@ -15,13 +15,15 @@
         <CarouselSlide
           v-for="(image, index) in carouselImages"
           :key="index"
-          class="absolute container"
+          class="absolute"
         >
           <div
             v-show="currentImage === index + 1"
             class="relative justify-center align-middle max-w-screen max-h-screen"
           >
-            <img class="m-auto" :src="require(`../assets/${image}.png`)" />
+            <img
+              :src="require(`../assets/${image}.png`)"
+            />
           </div>
         </CarouselSlide>
       </Carousel>

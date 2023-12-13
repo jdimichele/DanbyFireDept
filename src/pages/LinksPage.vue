@@ -1,13 +1,20 @@
 <template>
   <div>
-    <h1 class="underline text-center py-3">Links</h1>
+    <div class="pt-5 flex-grow border-b-2 border-danby-red">
+      <h1 class="font-bold text-center">Links</h1>
+    </div>
     <p>
       This page is a directory of other emergency services organizations. For
       important public safety information to help protect your family, see our
-      <router-link to="/safety" class="underline hover:underline hover:text-blue-700">Safety Information</router-link> page.
+      <router-link
+        to="/safety"
+        class="underline hover:underline hover:text-blue-700"
+        >Safety Information</router-link
+      >
+      page.
     </p>
     <br />
-  <all-links />
+    <all-links />
   </div>
 </template>
 

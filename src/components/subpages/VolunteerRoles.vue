@@ -1,13 +1,20 @@
 <template>
   <div>
-    <h1 class="underline py-3 text-center">Roles</h1>
+    <div class="pt-5 flex-grow border-b-2 border-danby-red">
+      <h1 class="font-bold text-center">Roles</h1>
+    </div>
     <p class="indent-10 py-3">
       Every firefighter and emergency medical care provider in the Danby Fire
       District is a volunteer, but no amount of dedication can make up for the
       fact that there just aren't enough of us. We need additional volunteers.
       Almost everybody joins with no prior emergency qualifications or
       experience; all training and equipment is provided at no cost to the
-      volunteer. If you're interested in applying, please fill out our online <router-link to="/volunteer/join" class="underline hover:underline hover:text-blue-700">application form</router-link>.
+      volunteer. If you're interested in applying, please fill out our online
+      <router-link
+        to="/volunteer/join"
+        class="underline hover:underline hover:text-blue-700"
+        >application form</router-link
+      >.
     </p>
     <p class="text-center py-3">
       There's a variety of ways you can get involved, depending on your
