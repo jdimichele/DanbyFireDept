@@ -103,11 +103,11 @@
                       type="radio"
                       id="sign-direction"
                       name="sign-direction"
-                      value="horizontal"
+                      value="Horizontal"
                       v-model="signDirection"
                       required
                     />
-                    <label for="horizontal" class="text-base align-middle pl-1"
+                    <label for="Horizontal" class="text-base align-middle pl-1"
                       >Horizontal</label
                     >
                   </div>
@@ -117,11 +117,11 @@
                       type="radio"
                       id="sign-direction"
                       name="sign-direction"
-                      value="vertical"
+                      value="Vertical"
                       v-model="signDirection"
                       required
                     />
-                    <label for="vertical" class="text-base align-middle pl-1"
+                    <label for="Vertical" class="text-base align-middle pl-1"
                       >Vertical</label
                     >
                   </div>
@@ -235,11 +235,11 @@
                       type="radio"
                       id="mounting"
                       name="mounting"
-                      value="yes"
+                      value="Yes"
                       v-model="mounting"
                       required
                     />
-                    <label for="yes" class="text-base align-middle pl-1"
+                    <label for="Yes" class="text-base align-middle pl-1"
                       >Yes</label
                     >
                   </div>
@@ -249,11 +249,11 @@
                       type="radio"
                       id="mounting"
                       name="mounting"
-                      value="no"
+                      value="No"
                       v-model="mounting"
                       required
                     />
-                    <label for="no" class="text-base align-middle pl-1"
+                    <label for="No" class="text-base align-middle pl-1"
                       >No</label
                     >
                   </div>
@@ -264,32 +264,36 @@
 
           <!-- Payment Options radio buttons -->
           <div class="sm:flex pb-2 ml-10">
-            <div>
-              <p class="text-base">Payment Options:</p>
-            </div>
-            <div class="">
-              <input
-                class="input input-sm input-bordered"
-                type="radio"
-                id="payment-option"
-                name="payment-option"
-                value="yes"
-                v-model.trim="paymentOption"
-                required
-              />
-              <label for="yes" class="text-base">Check</label>
-            </div>
-            <div class="">
-              <input
-                class="input input-sm input-bordered"
-                type="radio"
-                id="payment-option"
-                name="payment-option"
-                value="paypal"
-                v-model.trim="paymentOption"
-                required
-              />
-              <label for="paypal" class="text-base">PayPal</label>
+            <div class="flex">
+              <div class="inline-flex">
+                <div class="pr-5">
+                  <p class="text-base">Payment Options:</p>
+                </div>
+                <div class="">
+                  <input
+                    class="input input-sm input-bordered"
+                    type="radio"
+                    id="payment-option"
+                    name="payment-option"
+                    value="Check"
+                    v-model.trim="paymentOption"
+                    required
+                  />
+                  <label for="Check" class="text-base">Check</label>
+                </div>
+                <div class="">
+                  <input
+                    class="input input-sm input-bordered"
+                    type="radio"
+                    id="payment-option"
+                    name="payment-option"
+                    value="PayPal"
+                    v-model.trim="paymentOption"
+                    required
+                  />
+                  <label for="PayPal" class="text-base">PayPal</label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -391,8 +395,8 @@ export default {
           phoneNumber: this.phoneNumber,
           homeAddress: this.homeAddress,
           signDirection: this.signDirection,
-          numberOfSigns: this.numberOfSigns,
-          numberOfPosts: this.numberOfPosts,
+          numberOfSigns: this.numberOfSigns ?? "0",
+          numberOfPosts: this.numberOfPosts ?? "0",
           mounting: this.mounting,
           paymentOption: this.paymentOption,
         };

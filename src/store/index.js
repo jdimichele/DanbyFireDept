@@ -121,7 +121,6 @@ export default createStore({
           mounting: data.mounting,
           paymentOption: data.paymentOption,
         };
-        console.log(requestData);
 
         await dataBase.set(requestData);
 
