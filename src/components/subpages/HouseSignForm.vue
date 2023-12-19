@@ -264,34 +264,40 @@
 
           <!-- Payment Options radio buttons -->
           <div class="sm:flex pb-2 ml-10">
-            <div class="flex">
-              <div class="inline-flex">
-                <div class="pr-5">
-                  <p class="text-base">Payment Options:</p>
-                </div>
-                <div class="">
-                  <input
-                    class="input input-sm input-bordered"
-                    type="radio"
-                    id="payment-option"
-                    name="payment-option"
-                    value="Check"
-                    v-model.trim="paymentOption"
-                    required
-                  />
-                  <label for="Check" class="text-base">Check</label>
-                </div>
-                <div class="">
-                  <input
-                    class="input input-sm input-bordered"
-                    type="radio"
-                    id="payment-option"
-                    name="payment-option"
-                    value="PayPal"
-                    v-model.trim="paymentOption"
-                    required
-                  />
-                  <label for="PayPal" class="text-base">PayPal</label>
+            <div>
+              <label class="text-base">Payment Options:</label>
+              <div class="flex">
+                <div class="inline-flex">
+                  <div class="pr-5">
+                    <input
+                      class="align-middle"
+                      type="radio"
+                      id="payment-option"
+                      name="payment-option"
+                      value="Check"
+                      v-model.trim="paymentOption"
+                      required
+                    />
+                    <label for="Check" class="text-base align-middle pl-1"
+                      >Check</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      class="align-middle"
+                      type="radio"
+                      id="payment-option"
+                      name="payment-option"
+                      value="PayPal"
+                      v-model.trim="paymentOption"
+                      required
+                    />
+                    <label for="PayPal" class="text-base align-middle pl-1"
+                      >PayPal</label
+                    >
+                  </div>
+                  <div v-if="paymentOption === 'PayPal'">
+                  </div>
                 </div>
               </div>
             </div>
