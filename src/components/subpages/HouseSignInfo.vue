@@ -61,10 +61,12 @@
     <p>
       Under a grant, we are able to offer these at no cost to Danby residents
       who are senior citizens or who have disabilities. To order a sign, please
-      download and complete an order form, and return it to the Fire Company:
-      Regular order form: $12 per sign, $5 per post Free sign order form: Free
-      to Danby residents who are senior citizens or who have disabilities. We
-      will also help install a number sign at your request.
+      fill out a form
+      <router-link
+        to="/safety/house-sign-form"
+        class="hover:underline hover:text-blue-700 underline"
+        >here</router-link
+      >.
     </p>
   </div>
 </template>

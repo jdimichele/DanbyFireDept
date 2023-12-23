@@ -1,5 +1,5 @@
 <template>
-  <div class="carouselSlide">
+  <div class="carouselSlide absolute">
     <transition name="carouselSlide">
       <slot />
     </transition>

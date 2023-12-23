@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative grid grid-cols-1 grid-rows-1 gap-2 min-w-min sm:grid-rows-1 sm:grid-cols-2 sm:gap-10 sm:h-full"
+    class="relative grid grid-cols-1 grid-rows-1 gap-2 min-w-min sm:grid-rows-1 sm:grid-cols-2 sm:gap-10"
   >
     <div
       class="row-span-1 col-span-6 order-1 pt-10 h-96 sm:relative sm:pt-0 sm:top-5 sm:order-2 sm:col-span-1 sm:grid-rows-1"
@@ -15,14 +15,13 @@
         <CarouselSlide
           v-for="(image, index) in carouselImages"
           :key="index"
-          class="absolute"
         >
           <div
             v-show="currentImage === index + 1"
-            class="relative justify-center align-middle max-w-screen max-h-screen"
+            class="relative justify-center align-middle"
           >
             <img
-              :src="require(`../assets/${image}.png`)"
+              :src="require(`../assets/${image}.png`)" class="max-h-screen"
             />
           </div>
         </CarouselSlide>

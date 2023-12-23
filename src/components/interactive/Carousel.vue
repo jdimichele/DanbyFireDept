@@ -1,11 +1,11 @@
 <template>
 <!-- Add expand feature to carousel to see image full size. -->
-  <div class="carousel h-full flex items-center bg-black rounded-lg">
-    <slot :currentImage="currentImage" />
+  <div class="flex h-full items-center bg-black rounded-lg">
+    <slot :currentImage="currentImage"/>
     <!-- Navigation for Carousel -->
     <div
       v-if="navEnabled"
-      class="navigate w-full p-3 absolute flex items-center"
+      class="w-full p-3 absolute flex items-center"
     >
       <div class="toggle-left flex-1">
         <i
@@ -24,7 +24,7 @@
     <!-- Pagination (which for now, I'm not entirely sure I like this just yet. Will ask Derek on his opinions later.) -->
     <div
       v-if="paginationEnabled"
-      class="pagination absolute bottom-6 w-5 h-5 flex justify-center items-center gap-4"
+      class="absolute bottom-6 w-5 h-5 flex justify-center items-center gap-4"
     >
       <span
         @click="goToSlide(index)"

@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 grid-rows-1">
+  <div class="grid grid-cols-2 grid-flow-row">
     <div class="col-span-2">
       <div class="py-2">
         <div class="pt-5 flex-grow border-b-2 border-danby-red">
@@ -296,11 +296,20 @@
                       >PayPal</label
                     >
                   </div>
-                  <div v-if="paymentOption === 'PayPal'">
-                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div v-if="paymentOption === 'PayPal'">
+            <p></p>
+          </div>
+          <div v-else-if="paymentOption === 'Check'">
+            <p class="text-base">
+              Please send payment with the following information: Payment to:
+              Danby Volunteer Fire Company. Attn: House Signs Total amount: ${{
+                totalPrice
+              }}
+            </p>
           </div>
         </div>
 
@@ -427,6 +436,13 @@ export default {
       this.paymentOption = null;
       this.postNeeded = "";
       this.signNeeded = "";
+    },
+  },
+  computed: {
+    totalPrice() {
+      const signsCost = this.numberOfSigns * 12;
+      const postsCost = this.numberOfPosts * 5;
+      return signsCost + postsCost;
     },
   },
 };
