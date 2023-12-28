@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 grid-flow-row">
+  <div class="grid grid-cols-1 grid-flow-row sm:grid-cols-2">
     <div class="col-span-2">
       <div class="py-2">
         <div class="pt-5 flex-grow border-b-2 border-danby-red">
@@ -131,7 +131,7 @@
           </div>
 
           <!-- Number of Signs selection -->
-          <div class="sm:flex pb-2 ml-10">
+          <!-- <div class="sm:flex pb-2 ml-10">
             <p class="text-base">Do you need more than one sign?</p>
             <div class="inline-flex pl-2">
               <label for="signNeeded" class="text-base pr-1">Yes</label>
@@ -154,29 +154,29 @@
               />
             </div>
           </div>
-          <div v-if="signNeeded === 'true'">
-            <div class="sm:flex pb-2 pl-2 ml-10">
-              <div class="inline-flex">
-                <label for="number-of-signs" class="text-base"
-                  >Number of Signs Needed:</label
-                >
-                <select
-                  class="select select-sm input-bordered text-xl ml-2"
-                  id="number-of-signs"
-                  name="number-of-signs"
-                  v-model="numberOfSigns"
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </div>
+        v-if="signNeeded === 'true'"
+        -->
+          <div class="sm:flex pb-2 ml-10">
+            <div class="inline-flex">
+              <label for="number-of-signs" class="text-base"
+                >Number of Signs Needed:</label
+              >
+              <select
+                class="select select-sm input-bordered text-xl ml-2"
+                id="number-of-signs"
+                name="number-of-signs"
+                v-model="numberOfSigns"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
             </div>
           </div>
 
           <!-- Number of Posts selection -->
-          <div class="sm:flex pb-2 ml-10">
+          <!-- <div class="sm:flex pb-2 ml-10">
             <p class="text-base">Do you need more than one sign post?</p>
             <div class="inline-flex pl-2">
               <label for="postNeeded" class="text-base pr-1">Yes</label>
@@ -199,24 +199,25 @@
               />
             </div>
           </div>
-          <div v-if="postNeeded === 'true'">
-            <div class="sm:flex pb-2 pl-2 ml-10">
-              <div class="inline-flex">
-                <label for="number-of-signs" class="text-base"
-                  >Number of Posts Needed:</label
-                >
-                <select
-                  class="select select-sm input-bordered text-xl ml-2"
-                  id="number-of-posts"
-                  name="number-of-posts"
-                  v-model="numberOfPosts"
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </div>
+        v-if="postNeeded === 'true'"
+        -->
+
+          <div class="sm:flex pb-2 ml-10">
+            <div class="inline-flex">
+              <label for="number-of-signs" class="text-base"
+                >Number of Posts Needed:</label
+              >
+              <select
+                class="select select-sm input-bordered text-xl ml-2"
+                id="number-of-posts"
+                name="number-of-posts"
+                v-model="numberOfPosts"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
             </div>
           </div>
 
@@ -300,23 +301,41 @@
               </div>
             </div>
           </div>
+
+          <!-- Payment Options Additional Info Div -->
           <div v-if="paymentOption === 'PayPal'">
             <div class="text-base ml-10">
-              <h1>Please send click the link below to proceed with your PayPal payment:</h1>
-              <h1>Total amount: ${{ totalPrice }}</h1>
+              <h1 class="font-bold">
+                Please send click the link below to proceed with your PayPal
+                payment:
+              </h1>
+              <div class="inline-flex">
+                <h1 class="underline">Total Price: ${{ totalPrice }}</h1>
+                <a
+                  href="https://www.paypal.com/paypalme/DanbyFireNY"
+                  target="_blank"
+                  class="ml-10"
+                >
+                  <img
+                    class="h-6"
+                    src="../../assets/social/paypal-seeklogo.com.svg"
+                /></a>
+              </div>
             </div>
           </div>
           <div v-else-if="paymentOption === 'Check'">
             <div class="text-base ml-10">
-              <h1>Please send payment with the following information:</h1>
+              <h1 class="font-bold">
+                Please send payment with the following information:
+              </h1>
               <h1>Payment to: Danby Volunteer Fire Company.</h1>
               <h1>Attn: House Signs</h1>
-              <h1>Total amount: ${{ totalPrice }}</h1>
+              <h1 class="underline">Total Price: ${{ totalPrice }}</h1>
             </div>
           </div>
         </div>
 
-        <div class="flex items-center justify-center pt-3">
+        <div class="flex items-center justify-center pt-6">
           <button
             type="submit"
             value="Submit"
@@ -329,7 +348,7 @@
     </div>
 
     <!-- Sign Post Photo div -->
-    <div>
+    <div class="hidden sm:block">
       <h2 class="text-center text-base">Example of Vertical Sign Post</h2>
       <div class="flex justify-center items-center">
         <img class="" src="../../assets/sign-post.jpg" />
