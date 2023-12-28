@@ -152,12 +152,37 @@
             >About Us</router-link
           >
         </li>
-        <li class="uppercase p-4 ml-6">
+        <li @click="isOpen = !isOpen" class="uppercase p-4 ml-6">
           <router-link
             to="/safety"
-            class="hover:text-danby-yellow text-sm transition-all duration-500 ease-in-out pb-1 bottom-1 border-solid border-transparent text-black"
-            >Safety Information</router-link
+            class="hover:text-danby-yellow text-sm transition-all duration-500 ease-in-out pb-1 bottom-1 border-solid border-transparent text-black inline-flex"
+            >Safety Information<svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current w-5 h-5"
+            >
+              <path
+                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              />
+            </svg></router-link
           >
+        </li>
+        <li v-if="isOpen">
+          <div>
+            <li class="uppercase p-4 ml-12">
+              <router-link
+                to="/safety/house-info"
+                class="hover:text-danby-yellow items-center text-sm transition-all duration-500 ease-in-out pb-1 bottom-1 border-solid border-transparent text-black"
+                >House Sign Info</router-link
+              >
+            </li>
+            <li class="uppercase p-4 ml-12">
+              <router-link
+                to="/safety/house-sign-form"
+                class="hover:text-danby-yellow items-center text-sm transition-all duration-500 ease-in-out pb-1 bottom-1 border-solid border-transparent text-black"
+                >House Sign Order Form</router-link
+              >
+            </li>
+          </div>
         </li>
         <li @click="isOpen = !isOpen" class="uppercase p-4 ml-6">
           <router-link

@@ -49,7 +49,6 @@
           <div class="sm:flex pb-2 ml-10">
             <div class="sm:w-28">
               <label for="email-address" class="text-base">Email:</label>
-
               <input
                 class="input input-sm input-bordered text-xl"
                 type="email"
