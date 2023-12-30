@@ -3,7 +3,7 @@
     class="relative grid grid-cols-1 grid-rows-1 gap-2 min-w-min sm:grid-rows-1 sm:grid-cols-2 sm:gap-10"
   >
     <div
-      class="row-span-1 col-span-6 order-1 pt-10 h-96 sm:relative sm:pt-0 sm:top-5 sm:order-2 sm:col-span-1 sm:grid-rows-1"
+      class="relative row-span-1 col-span-6 order-1 pt-10 h-96 sm:pt-0 sm:top-5 sm:order-2 sm:col-span-1 sm:grid-rows-1"
     >
       <Carousel
         :navigation="true"
@@ -12,17 +12,9 @@
         :timeout="5000"
         v-slot="{ currentImage }"
       >
-        <CarouselSlide
-          v-for="(image, index) in carouselImages"
-          :key="index"
-        >
-          <div
-            v-show="currentImage === index + 1"
-            class="relative justify-center align-middle"
-          >
-            <img
-              :src="require(`../assets/${image}.png`)" class="max-h-screen"
-            />
+        <CarouselSlide v-for="(image, index) in carouselImages" :key="index">
+          <div v-show="currentImage === index + 1" class="relative justify-center align-middle">
+            <img class="max-h-screen" :src="require(`../assets/${image}.png`)" />
           </div>
         </CarouselSlide>
       </Carousel>
@@ -236,7 +228,7 @@
                   <tr class="border-b">
                     <td></td>
                     <th class="text-right pr-10">At Large Director</th>
-                    <td>Amy Westmiller</td>
+                    <td>Ivan Ross</td>
                   </tr>
 
                   <tr class="border-b">

@@ -130,31 +130,6 @@
           </div>
 
           <!-- Number of Signs selection -->
-          <!-- <div class="sm:flex pb-2 ml-10">
-            <p class="text-base">Do you need more than one sign?</p>
-            <div class="inline-flex pl-2">
-              <label for="signNeeded" class="text-base pr-1">Yes</label>
-              <input
-                class="align-middle"
-                type="radio"
-                name="signNeeded"
-                id="signNeeded"
-                v-model="signNeeded"
-                value="true"
-              />
-              <label for="signNeeded" class="text-base px-1">No</label>
-              <input
-                class="align-middle"
-                type="radio"
-                name="signNeeded"
-                id="signNeeded"
-                v-model="signNeeded"
-                value="false"
-              />
-            </div>
-          </div>
-        v-if="signNeeded === 'true'"
-        -->
           <div class="sm:flex pb-2 ml-10">
             <div class="inline-flex">
               <label for="number-of-signs" class="text-base"
@@ -175,32 +150,6 @@
           </div>
 
           <!-- Number of Posts selection -->
-          <!-- <div class="sm:flex pb-2 ml-10">
-            <p class="text-base">Do you need more than one sign post?</p>
-            <div class="inline-flex pl-2">
-              <label for="postNeeded" class="text-base pr-1">Yes</label>
-              <input
-                class="align-middle"
-                type="radio"
-                name="postNeeded"
-                id="postNeeded"
-                v-model="postNeeded"
-                value="true"
-              />
-              <label for="postNeeded" class="text-base px-1">No</label>
-              <input
-                class="align-middle"
-                type="radio"
-                name="postNeeded"
-                id="postNeeded"
-                v-model="postNeeded"
-                value="false"
-              />
-            </div>
-          </div>
-        v-if="postNeeded === 'true'"
-        -->
-
           <div class="sm:flex pb-2 ml-10">
             <div class="inline-flex">
               <label for="number-of-signs" class="text-base"
@@ -309,7 +258,10 @@
                 payment:
               </h1>
               <div class="inline-flex">
-                <h1 class="underline">Total Price: ${{ totalPrice }}</h1>
+                <div class="inline-flex">
+                  <h1 class="underline pr-2">Total Price:</h1>
+                  ${{ totalPrice }}
+                </div>
                 <a
                   href="https://www.paypal.com/paypalme/DanbyFireNY"
                   target="_blank"
@@ -329,7 +281,10 @@
               </h1>
               <h1>Payment to: Danby Volunteer Fire Company.</h1>
               <h1>Attn: House Signs</h1>
-              <h1 class="underline">Total Price: ${{ totalPrice }}</h1>
+              <div class="inline-flex">
+                <h1 class="underline pr-2">Total Price:</h1>
+                ${{ totalPrice }}
+              </div>
             </div>
           </div>
         </div>
@@ -406,8 +361,6 @@
 export default {
   data() {
     return {
-      signNeeded: "",
-      postNeeded: "",
       firstName: null,
       lastName: null,
       emailAddress: null,
@@ -457,8 +410,8 @@ export default {
       this.numberOfPosts = null;
       this.mounting = null;
       this.paymentOption = null;
-      this.postNeeded = "";
-      this.signNeeded = "";
+      // this.postNeeded = "";
+      // this.signNeeded = "";
     },
   },
   computed: {

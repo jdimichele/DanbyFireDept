@@ -1,5 +1,5 @@
 <template>
-  <div class="carouselSlide absolute">
+  <div class="carouselSlide absolute sm:max-h-screen">
     <transition name="carouselSlide">
       <slot />
     </transition>

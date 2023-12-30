@@ -1,12 +1,9 @@
 <template>
-<!-- Add expand feature to carousel to see image full size. -->
+  <!-- Add expand feature to carousel to see image full size. -->
   <div class="flex h-full items-center bg-black rounded-lg">
     <slot :currentImage="currentImage"/>
     <!-- Navigation for Carousel -->
-    <div
-      v-if="navEnabled"
-      class="w-full p-3 absolute flex items-center"
-    >
+    <div v-if="navEnabled" class="w-full p-3 absolute flex items-center">
       <div class="toggle-left flex-1">
         <i
           @click="prevSlide"
