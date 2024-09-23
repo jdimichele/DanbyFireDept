@@ -20,7 +20,6 @@ const HouseSignForm = () => import("../components/subpages/HouseSignForm.vue");
 const HouseSignInfo = () => import("../components/subpages/HouseSignInfo.vue");
 const NotFound = () => import("../components/interactive/NotFound.vue");
 const AdminDashboard = () => import("../pages/AdminDashboard.vue");
-const AdminCreateBlog = () => import("../components/subpages/admin/AdminCreateBlog.vue");
 
 const routes = [
   {
@@ -153,12 +152,6 @@ const routes = [
       requiresAuth: true,
       requiresAdmin: true,
     },
-  },
-  {
-    path: "/new-post",
-    name: "AdminNewPost",
-    component: AdminCreateBlog,
-    meta: { title: "AdminNewPost", requiresAuth: true, requiresAdmin: true },
   },
 ];
 
