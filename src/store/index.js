@@ -87,6 +87,7 @@ export default createStore({
           appID: dataBase.id,
           date: timestamp,
           name: data.firstName + " " + data.lastName,
+          address: data.address,
           email: data.emailAddress,
           phone: data.phoneNumber,
           pos: data.position,

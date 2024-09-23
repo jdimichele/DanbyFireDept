@@ -65,6 +65,21 @@
       </div>
       <div class="sm:flex pb-2 ml-10">
         <div class="sm:w-28">
+          <label for="address">Address:</label>
+        </div>
+        <div>
+          <input
+            class="input input-sm input-bordered text-xl"
+            type="address"
+            id="address"
+            name="address"
+            v-model="address"
+            required
+          />
+        </div>
+      </div>
+      <div class="sm:flex pb-2 ml-10">
+        <div class="sm:w-28">
           <label for="email-address">Email:</label>
         </div>
         <div>
@@ -181,6 +196,7 @@ export default {
     return {
       firstName: null,
       lastName: null,
+      address: null,
       emailAddress: null,
       phoneNumber: null,
       position: null,
@@ -194,6 +210,7 @@ export default {
         const applicationForm = {
           firstName: this.firstName,
           lastName: this.lastName,
+          address: this.address,
           emailAddress: this.emailAddress,
           phoneNumber: this.phoneNumber,
           position: this.position,
@@ -209,6 +226,7 @@ export default {
       this.firstName = "";
       this.lastName = "";
       this.emailAddress = "";
+      this.address = "";
       this.phoneNumber = "";
       this.position = null;
     },
