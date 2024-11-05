@@ -1,12 +1,11 @@
 node_modules
 /dist
 src/firebase.js
-firebase.json
-firestore.indexes.json
-firestore.rules
-storage.rules
-.firebaserc
-/functions
+/firebase.json
+/firestore.indexes.json
+/firestore.rules
+/storage.rules
+/functions/
 
 .env
 .env.production
