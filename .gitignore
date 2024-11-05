@@ -1,4 +1,3 @@
-.DS_Store
 node_modules
 /dist
 src/firebase.js
@@ -7,27 +6,22 @@ firestore.indexes.json
 firestore.rules
 storage.rules
 .firebaserc
-functions/
+/functions
 
-
-# local env files
 .env
 .env.production
 .env.local
 .env.*.local
 
-
-# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
 .idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.vscode
