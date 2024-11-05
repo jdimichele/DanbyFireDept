@@ -99,7 +99,7 @@
       </ul>
       <div class="flex justify-center items-center">
         <img
-          src="../assets/danbyQRCode.png"
+          src="../assets/social/danbyQRCode.png"
           alt="QR Code that takes you to the Danby PayPal donation link."
         />
       </div>

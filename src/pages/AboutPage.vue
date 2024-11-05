@@ -5,19 +5,21 @@
     <div
       class="relative row-span-1 col-span-6 order-1 pt-10 h-96 sm:pt-0 sm:top-5 sm:order-2 sm:col-span-1 sm:grid-rows-1"
     >
-      <Carousel
-        :navigation="true"
-        :pagination="false"
-        :startAutoPlay="true"
-        :timeout="5000"
-        v-slot="{ currentImage }"
-      >
-        <CarouselSlide v-for="(image, index) in carouselImages" :key="index">
-          <div v-show="currentImage === index + 1" class="relative justify-center align-middle">
-            <img class="max-h-screen" :src="imageUrl" />
-          </div>
-        </CarouselSlide>
-      </Carousel>
+      <div class="carousel w-full h-full">
+        <img
+          :src="carouselImages[currentImageIndex]"
+          alt="Carousel Image"
+          class="w-full object-cover h-auto max-h-96"
+        />
+      </div>
+      <button
+        @click="prevImage"
+        class="absolute transform fa-solid fa-chevron-left items-center justify-center rounded-full h-10 w-10 bg-opacity-75 bg-danby-yellow left-2 top-1/2 -translate-y-1/2"
+      ></button>
+      <button
+        @click="nextImage"
+        class="absolute transform fa-solid fa-chevron-right items-center justify-center rounded-full h-10 w-10 bg-opacity-75 bg-danby-yellow right-2 top-1/2 -translate-y-1/2"
+      ></button>
     </div>
 
     <div
@@ -216,13 +218,7 @@
 </template>
 
 <script>
-import Carousel from '@/components/interactive/Carousel.vue'
-import CarouselSlide from '@/components/interactive/CarouselSlide.vue'
 export default {
-  components: {
-    Carousel,
-    CarouselSlide
-  },
   data() {
     return {
       carouselImages: [
@@ -237,13 +233,40 @@ export default {
         'DSC_6146',
         'pancakes'
       ],
+      currentImageIndex: 0,
       currentYear: new Date().getFullYear()
     }
   },
-  computed: {
-    imageUrl() {
-      return new URL(`../assets/${this.image}.png`, import.meta.url).href
+  mounted() {
+    const images = import.meta.glob('../assets/*.png')
+    const loadedImages = []
+
+    for (const path in images) {
+      images[path]().then((mod) => {
+        loadedImages.push(mod.default || mod)
+        this.carouselImages = loadedImages
+      })
     }
+
+    this.startAutoScroll()
+  },
+  methods: {
+    nextImage() {
+      this.currentImageIndex = (this.currentImageIndex + 1) % this.carouselImages.length
+    },
+    prevImage() {
+      this.currentImageIndex =
+        (this.currentImageIndex - 1 + this.carouselImages.length) % this.carouselImages.length
+    },
+    startAutoScroll() {
+      this.autoScrollInterval = setInterval(this.nextImage, 5000)
+    },
+    stopAutoScroll() {
+      clearInterval(this.autoScrollInterval)
+    }
+  },
+  beforeUnmount() {
+    this.stopAutoScroll()
   }
 }
 </script>
