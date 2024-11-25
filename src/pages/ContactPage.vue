@@ -77,15 +77,8 @@
       </ul>
       <ul class="indent-10 pb-4">
         <li class="pb-4 m-8">
-          Why are we fundraising? We need battery-operated extrication tools. We are replacing a set
-          of tools that are currently hydraulically operated, which means they cannot go beyond a
-          certain distance from our engine, 401. They also cost $30,000 back in 1999. Through
-          careful maintenance and proper use, we have made sure they have remained in working order
-          for 20+ years, but cars have changed, and our hydraulic extrication tools are not rated
-          for new safety structures in modern cars, which costs us time during rescue and therefore
-          drives our need for new extrication tools. If you'd like to support us in our mission, we
-          have a Paypal donation page set up that can be paid with Credit/Debit cards (or Paypal of
-          course).
+          If you'd like to support us in our mission, we have a Paypal donation page set up that can
+          be paid with Credit/Debit cards (or Paypal of course).
         </li>
         <li class="m-8">
           You can find a link to our PayPal by scanning the QR code below or click
