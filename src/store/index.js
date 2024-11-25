@@ -1,6 +1,7 @@
 import { createStore } from 'vuex'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { db, timestamp } from '../firebase.js'
+import { getDoc, doc, collection, setDoc } from 'firebase/firestore'
 
 export default createStore({
   state() {
@@ -70,8 +71,8 @@ export default createStore({
       const auth = getAuth()
       onAuthStateChanged(auth, async (user) => {
         if (user) {
-          const dataBase = db.collection('users').doc(user.uid)
-          const dbResults = await dataBase.get()
+          const dataBase = doc(db, 'users', user.id);
+          const dbResults = await getDoc(dataBase);
           commit('setProfileInfo', dbResults)
           commit('setProfileInitials')
 
@@ -84,7 +85,7 @@ export default createStore({
 
     async submitApplication({ commit }, data) {
       try {
-        const dataBase = db.collection('applications').doc()
+        const dataBase = doc(collection(db, 'applications'));
         const applicationData = {
           appID: dataBase.id,
           date: timestamp(),
@@ -95,7 +96,7 @@ export default createStore({
           pos: data.position
         }
 
-        await dataBase.set(applicationData)
+        await setDoc(dataBase, applicationData)
         commit('addApplication', applicationData)
 
         return 'Application successfully sent, thank you!'
@@ -106,7 +107,7 @@ export default createStore({
 
     async submitSignRequest({ commit }, data) {
       try {
-        const dataBase = db.collection('house-signs').doc()
+        const dataBase = doc(collection(db, 'house-signs'));
         const requestData = {
           appID: dataBase.id,
           data: timestamp(),
@@ -121,11 +122,12 @@ export default createStore({
           paymentOption: data.paymentOption
         }
 
-        await dataBase.set(requestData)
+        await setDoc(dataBase, requestData);
         commit('addSignRequest', requestData)
 
         return 'House Sign Request submitted. A representative from DVFC will reach out to you soon.'
       } catch (error) {
+        console.log(error);
         throw new Error('Sign request could not be sent to the server. Please try again later.')
       }
     },
