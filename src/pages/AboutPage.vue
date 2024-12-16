@@ -179,33 +179,32 @@
                     <th class="text-right pr-10">2nd Assistant Chief</th>
                     <td>Peter Goodman</td>
 
-                    <th class="text-right pr-10">Secretary</th>
-                    <td>Sharon Gaden</td>
+                    <th class="text-right pr-10">Treasurer</th>
+                    <td>Steve Hilsdorf</td>
                   </tr>
 
                   <tr class="border-b">
                     <th class="text-right pr-10">3rd Assistant Chief</th>
                     <td>Jethro Forbes</td>
 
-                    <th class="text-right pr-10">Treasurer</th>
-                    <td>Steve Hilsdorf</td>
+                    <th class="text-right pr-10">Secretary</th>
+                    <td>Sharon Gaden</td>
                   </tr>
 
                   <tr class="border-b">
                     <th class="text-right pr-10">Lieutenant</th>
                     <td>Simon Wyatt</td>
-                  </tr>
 
-                  <tr class="border-b">
-                    <td></td>
-                    <th class="text-right pr-10">At Large Director</th>
-                    <td>Ivan Ross</td>
-                  </tr>
-
-                  <tr class="border-b">
-                    <td></td>
-                    <th class="text-right pr-10">At Large Director</th>
+                    <th class="text-right pr-10">Director At Large</th>
                     <td>Steve Hilsdorf</td>
+                  </tr>
+
+                  <tr class="border-b">
+                    <th class="text-right pr-10">Lieutenant</th>
+                    <td>Derek Dougherty</td>
+
+                    <th class="text-right pr-10">Director at Large</th>
+                    <td>Ivan Ross</td>
                   </tr>
                 </tbody>
               </table>
