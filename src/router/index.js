@@ -97,6 +97,10 @@ const routes = [
     }
   },
   {
+    path: '/join',
+    redirect: '/volunteer/join'
+  },
+  {
     path: '/links',
     name: 'links',
     component: LinksPage,
