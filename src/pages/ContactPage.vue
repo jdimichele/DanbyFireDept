@@ -62,6 +62,14 @@
           </li>
           <li class="indent-10">
             <a
+              href="https://bsky.app/profile/danbyfiredept.bsky.social"
+              target="_blank"
+              class="text-blue-700 hover:underline hover:text-blue-700"
+              >Bluesky</a
+            >
+          </li>
+          <li class="indent-10">
+            <a
               href="https://twitter.com/DanbyFire"
               target="_blank"
               class="text-blue-700 hover:underline hover:text-blue-700"
