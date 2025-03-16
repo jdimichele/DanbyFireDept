@@ -32,6 +32,13 @@
                 >
               </div>
             </span>
+            <span>
+              <div class="transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <router-link to="/safety/new-york-annual-burn-ban" class="hover:text-danby-yellow text-lg"
+                  >New York Annual Burn Ban</router-link
+                >
+              </div>
+            </span>
           </div>
         </div>
         |

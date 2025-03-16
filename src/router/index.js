@@ -16,6 +16,7 @@ const VolunteerRoles = () => import('../components/subpages/VolunteerRoles.vue')
 const VolunteerApplication = () => import('../components/subpages/VolunteerApplication.vue')
 const HouseSignForm = () => import('../components/subpages/HouseSignForm.vue')
 const HouseSignInfo = () => import('../components/subpages/HouseSignInfo.vue')
+const NYBurnBanInfo = () => import ('../components/subpages/NYBurnBanInfo.vue')
 const NotFound = () => import('../components/interactive/NotFound.vue')
 const AdminDashboard = () => import('../pages/AdminDashboard.vue')
 
@@ -66,6 +67,15 @@ const routes = [
     component: HouseSignInfo,
     meta: {
       title: 'House Sign Info',
+      requiresAuth: false
+    }
+  },
+  {
+    path: '/safety/new-york-annual-burn-ban',
+    name: 'new-york-annual-burn-ban',
+    component: NYBurnBanInfo,
+    meta: {
+      title: 'New York Annual Burn Ban',
       requiresAuth: false
     }
   },
