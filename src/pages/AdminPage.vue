@@ -46,39 +46,37 @@
 </template>
 
 <script>
-// import Email from '../assets/icons/envelope-regular.vue'
-// import Password from '../assets/icons/lock-alt-solid.vue'
-// import firebase from 'firebase/app'
-// import 'firebase/auth'
+import { signInWithEmailAndPassword } from "firebase/auth";
+import Email from '../assets/icons/envelope-regular.vue'
+import Password from '../assets/icons/lock-alt-solid.vue'
 
-// export default {
-//   components: {
-//     Email,
-//     Password
-//   },
-//   data() {
-//     return {
-//       email: '',
-//       password: '',
-//       error: null,
-//       errorMsg: ''
-//     }
-//   },
-//   methods: {
-//     login() {
-//       firebase
-//         .auth()
-//         .signInWithEmailAndPassword(this.email, this.password)
-//         .then(() => {
-//           this.$router.push({ name: 'AdminDash' })
-//           this.error = false
-//           this.errorMsg = ''
-//         })
-//         .catch((err) => {
-//           this.error = true
-//           this.errorMsg = err.message
-//         })
-//     }
-//   }
-// }
+
+export default {
+  components: {
+    Email,
+    Password
+  },
+  data() {
+    return {
+      email: '',
+      password: '',
+      error: null,
+      errorMsg: ''
+    }
+  },
+  methods: {
+    async login() {
+      await signInWithEmailAndPassword(this.email, this.password)
+        .then(() => {
+          this.$router.push({ name: 'AdminDash' })
+          this.error = false
+          this.errorMsg = ''
+        })
+        .catch((err) => {
+          this.error = true
+          this.errorMsg = err.message
+        })
+    }
+  }
+}
 </script>

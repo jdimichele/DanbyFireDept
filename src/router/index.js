@@ -146,7 +146,7 @@ const routes = [
     }
   },
   {
-    path: '/admin',
+    path: '/dvfcadmin',
     name: 'admin',
     component: AdminPage,
     meta: {

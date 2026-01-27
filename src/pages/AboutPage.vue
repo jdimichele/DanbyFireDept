@@ -147,7 +147,7 @@
     <div class="col-span-5 row-span-5 sm:col-span-2 sm:grid-rows-1 sm:row-span-1 order-5">
       <h1 class="font-bold flex-grow border-b-2 ml-5 mr-10 border-danby-red">Who We Are</h1>
       <!-- {{ currentYear }} will need to be added back in January, 2025 -->
-      <h1 class="underline text-center">2025 Officers:</h1>
+      <h1 class="underline text-center">{{ currentYear }} Officers:</h1>
       <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
@@ -193,7 +193,7 @@
                   </tr>
 
                   <tr class="border-b">
-                    <th class="text-right pr-10">Lieutenant</th>
+                    <th class="text-right pr-10">1st Lieutenant</th>
                     <td>Derek Dougherty</td>
 
                     <th class="text-right pr-10">Director At Large</th>
@@ -201,11 +201,16 @@
                   </tr>
 
                   <tr class="border-b">
-                    <th class="text-right pr-10">Lieutenant</th>
+                    <th class="text-right pr-10">2nd Lieutenant</th>
                     <td>Ivan Ross</td>
 
                     <th class="text-right pr-10">Director at Large</th>
                     <td>Ivan Ross</td>
+                  </tr>
+
+                  <tr>
+                    <th class="text-right pr-10">3rd Lieutenant</th>
+                    <td>Simon Wyatt</td>
                   </tr>
                 </tbody>
               </table>
