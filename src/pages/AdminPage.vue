@@ -1,25 +1,27 @@
 <template>
   <div>
-    <router-link to="/">
-      <img
-        class="sm:h-40"
-        :src="'../assets/danbybadge.png'"
-        alt="Image of the Danby Volunteer Fire Company badge."
-      />
-    </router-link>
+    <div class="flex md:flex justify-center md:justify-center items-center md:items-center">
+      <router-link to="/">
+        <img
+          class="sm:h-40 m-3"
+          :src="'../assets/danbybadge.png'"
+          alt="Image of the Danby Volunteer Fire Company badge."
+        />
+      </router-link>
+    </div>
     <div class="overflow-hidden flex h-1/2 justify-center self-center m-auto w-11/12">
       <form class="flex relative px-10 py-0 flex-col items-center justify-center flex-1">
         <div class="w-11/12 max-w-2xl">
-          <div class="relative flex justify-center items-center mb-3">
+          <div class="relative flex justify-center items-center m-3">
             <input
               class="w-full border-none py-4 pr-4 pl-8"
               type="text"
-              placeholder="Admin Email"
+              placeholder="Email"
               v-model="email"
             />
             <Email class="w-3 absolute left-1" />
           </div>
-          <div class="relative flex justify-center items-center mb-3">
+          <div class="relative flex justify-center items-center m-3">
             <input
               class="w-full border-none py-4 pr-4 pl-8"
               type="password"
@@ -46,10 +48,9 @@
 </template>
 
 <script>
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import Email from '../assets/icons/envelope-regular.vue'
 import Password from '../assets/icons/lock-alt-solid.vue'
-
 
 export default {
   components: {
@@ -66,7 +67,8 @@ export default {
   },
   methods: {
     async login() {
-      await signInWithEmailAndPassword(this.email, this.password)
+      const auth = getAuth();
+      await signInWithEmailAndPassword(auth, this.email, this.password)
         .then(() => {
           this.$router.push({ name: 'AdminDash' })
           this.error = false
