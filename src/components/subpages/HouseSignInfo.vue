@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2">
+  <div class="pb-10">
     <div class="pt-5 flex-grow border-b-2 border-danby-red">
       <h1 class="font-bold text-center">House Numbering Sign for Emergency Services Info</h1>
     </div>
@@ -49,7 +49,11 @@
     </div>
     <p>
       Under a grant, we are able to offer these at no cost to Danby residents who are senior
-      citizens or who have disabilities. To order a sign, please fill out a form
+      citizens or who have disabilities.
+      <br />
+      Signs are available for $18 and posts are available for $7 each.
+      <br />
+      To order a sign, please fill out a form
       <router-link
         to="/safety/house-sign-form"
         class="hover:underline hover:text-blue-700 underline"

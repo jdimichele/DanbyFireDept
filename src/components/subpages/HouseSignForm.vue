@@ -126,7 +126,7 @@
           <!-- Number of Signs selection -->
           <div class="sm:flex pb-2 ml-10">
             <div class="inline-flex">
-              <label for="number-of-signs" class="text-base">Number of Signs Needed:</label>
+              <label for="number-of-signs" class="text-base">Number of Signs Needed ($18 each):</label>
               <select
                 class="select select-sm input-bordered text-xl ml-2"
                 id="number-of-signs"
@@ -144,7 +144,7 @@
           <!-- Number of Posts selection -->
           <div class="sm:flex pb-2 ml-10">
             <div class="inline-flex">
-              <label for="number-of-signs" class="text-base">Number of Posts Needed:</label>
+              <label for="number-of-signs" class="text-base">Number of Posts Needed ($7 each):</label>
               <select
                 class="select select-sm input-bordered text-xl ml-2"
                 id="number-of-posts"
@@ -386,8 +386,8 @@ export default {
   },
   computed: {
     totalPrice() {
-      const signsCost = this.numberOfSigns * 12
-      const postsCost = this.numberOfPosts * 5
+      const signsCost = this.numberOfSigns * 18
+      const postsCost = this.numberOfPosts * 7
       return signsCost + postsCost
     }
   }
